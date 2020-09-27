@@ -1,0 +1,16 @@
+save_order:
+  - selector: input[placeholder='请输入住人姓名']
+    params:
+      max_timeout: 30
+    action: input
+    value: ${name}
+  - selector: input[placeholder='请输入住人手机号']
+    params:
+      max_timeout: 30
+    action: input
+    value: ${phone}
+  - selector: button
+    params:
+      inner_text: 去支付
+      max_timeout: 30
+    action: click

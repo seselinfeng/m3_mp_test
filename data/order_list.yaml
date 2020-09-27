@@ -1,0 +1,10 @@
+scroll_to_footer:
+  - scroll:
+    selector: .scroll
+    x: 0
+    y: 500
+get_order_list:
+  - selector: .info
+    type: elements
+    wait_data_contains: IP房
+

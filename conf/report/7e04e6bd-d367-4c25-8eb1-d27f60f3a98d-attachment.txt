@@ -1,0 +1,2 @@
+[33mWARNING [0m root:wx_minium.py:163 [33mCan not find project_path in config, that means you must open dev tool by automation way first[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 464d5b15-0579-4586-b2f5-5252c19aef1e[0m

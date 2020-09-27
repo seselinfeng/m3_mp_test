@@ -1,0 +1,11 @@
+goto_hotel_scheduled:
+  - selector: view
+    params:
+      inner_text: ${room_type}
+      max_timeout: 30
+    action: click
+  - selector: .btn-action
+    params:
+      inner_text: 立即预订
+      max_timeout: 30
+    action: click
