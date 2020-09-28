@@ -13,6 +13,7 @@ class TestHourOrder:
         self.my = self.app.start().my()
         self.routing = self.app.start().routing()
         self.order_list = self.app.start().order_list()
+        self.order_detail = self.app.start().order_detail()
 
     @allure.title("时租房预定流程")
     @pytest.mark.parametrize(("name", "phone", "room_type"), get_data('test_hour_order', '../data/test_order.yaml'))
@@ -28,7 +29,7 @@ class TestHourOrder:
             assert fee_result == f'房费总额：¥{room_rate}\n优惠金额： ¥{preferential_amount}\n实付金额：¥{amount_paid}', f'当前返回实际值为: 房费总额：¥{room_rate}\n优惠金额： ¥{preferential_amount}\n实付金额：¥{amount_paid}'
         with allure.step("去支付"):
             hotel_scheduled.goto_pay()
-        time.sleep(10)
+        time.sleep(5)
         with allure.step("跳转到订单详情"):
             hotel_scheduled.goto_order_detail()
         with allure.step("获取订单详情页面数据，并断言"):
@@ -38,5 +39,4 @@ class TestHourOrder:
             assert username_result == f"入住人：{name}", f'当前返回的实际值为:入住人：{name} '
 
     def teardown(self):
-        # self.app.stop()
-        pass
+        self.routing.goto_my()
