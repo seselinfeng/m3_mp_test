@@ -19,7 +19,9 @@ class HotelScheduled(BasePage):
         获取费用明细
         """
         result = {}
-        self.step('../data/hotel_scheduled.yaml')
+        result = self.step('../data/hotel_scheduled.yaml')
+        print(result)
+        return result
 
     def goto_pay(self):
         """
@@ -30,4 +32,8 @@ class HotelScheduled(BasePage):
         # mock 支付接口
         mock_location = {"appId": None}
         self._mini.app.mock_wx_method("requestPayment", result=mock_location)
+        return HotelScheduled(self._mini)
+
+    def goto_order_detail(self):
+        self.step('../data/hotel_scheduled.yaml')
         return HotelScheduled(self._mini)

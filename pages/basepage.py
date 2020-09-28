@@ -76,7 +76,6 @@ class BasePage(minium.MiniTest):
                             element = self.finds(step.get('selector'), step.get('params'))[step.get('index')]
                     else:
                         element = self.find(step.get('selector'), step.get('params'))
-                print(element)
                 # 触发事件
                 if 'action' in step.keys():
                     action = step.get('action')
@@ -88,7 +87,7 @@ class BasePage(minium.MiniTest):
                         element.input(step.get('value'))
                     if action == 'get_text':
                         # 获取文本
-                        element = element.text
+                        element = element.inner_text
                 # 滚动页面
                 if 'scroll' in step.keys():
                     element = self.find(step.get('selector'), step.get('params'))
