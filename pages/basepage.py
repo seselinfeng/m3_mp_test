@@ -63,6 +63,7 @@ class BasePage(minium.MiniTest):
                 raw = raw.replace('${' + key + '}', value)
             # 反序列化
             steps = json.loads(raw)
+            print(steps)
             for step in steps:
                 # 定位元素
                 if 'selector' in step.keys():
@@ -71,6 +72,7 @@ class BasePage(minium.MiniTest):
                             element = self.finds(step.get('selector'), step.get('params'))[step.get('index')]
                     else:
                         element = self.find(step.get('selector'), step.get('params'))
+                print(element)
                 # 触发事件
                 if 'action' in step.keys():
                     action = step.get('action')

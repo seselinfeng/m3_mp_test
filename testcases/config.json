@@ -1,0 +1,8 @@
+{
+  "debug_mode": "debug",
+  "enable_app_log": true,
+  "platform": "Android",
+  "device_desire": {
+    "serial": "988b1c444c464a5530"
+  }
+}

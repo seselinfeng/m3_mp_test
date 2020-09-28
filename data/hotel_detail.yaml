@@ -1,5 +1,5 @@
 goto_hotel_scheduled:
-  - selector: view
+  - selector: view[class='title']
     params:
       inner_text: ${room_type}
       max_timeout: 30

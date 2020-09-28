@@ -15,6 +15,10 @@ class HotelScheduled(BasePage):
         return HotelScheduled(self._mini)
 
     def get_fee(self):
+        """
+        获取费用明细
+        """
+        result = {}
         self.step('../data/hotel_scheduled.yaml')
 
     def goto_pay(self):
@@ -23,4 +27,6 @@ class HotelScheduled(BasePage):
         :return: HotelScheduled
         """
         self.step('../data/hotel_scheduled.yaml')
+        mock_location = {"appId": None}
+        self._mini.app.mock_wx_method("requestPayment", result=mock_location)
         return HotelScheduled(self._mini)
