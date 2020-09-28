@@ -1,0 +1,5 @@
+select_switch:
+  - selector: checkbox
+    params:
+      max_timeout: 30
+    action: click

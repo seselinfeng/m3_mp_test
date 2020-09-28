@@ -9,6 +9,12 @@ save_order:
       max_timeout: 30
     action: input
     value: ${phone}
+equipment_rental:
+  - selector: .flex1.flex1.fc-light.fc-light
+    params:
+      inner_text: 选择设备
+      max_timeout: 30
+    action: click
 goto_pay:
   - selector: button
     params:

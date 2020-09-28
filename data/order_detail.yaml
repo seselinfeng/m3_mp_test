@@ -9,3 +9,8 @@ get_username:
     params:
       max_timeout: 30
     action: get_text
+get_switch:
+  - selector: .color_111A34.fs26.ml20
+    params:
+      max_timeout: 30
+    action: get_text

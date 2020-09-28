@@ -7,4 +7,8 @@ get_order_list:
   - selector: .info
     type: elements
     wait_data_contains: ${room_type}
+cancel_order:
+  - selector: public_btn_void.btn_h60_border
+    type: elements
+    wait_data_contains: M3立方米酒店
 

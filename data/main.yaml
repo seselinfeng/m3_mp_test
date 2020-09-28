@@ -47,3 +47,19 @@ set_day_date:
       inner_text: 确定
       max_timeout: 30
     action: click
+set_night_date:
+  - selector: .ml20
+    params:
+      inner_text: 入住
+      max_timeout: 30
+    action: click
+  - selector: view
+    params:
+      inner_text: ${start_date}
+      max_timeout: 30
+    action: click
+  - selector: .fs40.fs40
+    params:
+      inner_text: 确定
+      max_timeout: 30
+    action: click

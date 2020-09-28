@@ -15,7 +15,7 @@ class TestHourOrder:
         self.order_list = self.app.start().order_list()
         self.order_detail = self.app.start().order_detail()
 
-    @allure.title("时租房预定流程")
+    @allure.title("时租房预定流程测试")
     @pytest.mark.parametrize(("name", "phone", "room_type"), get_data('test_hour_order', '../data/test_order.yaml'))
     def test_hour_order(self, name, phone, room_type):
         with allure.step("时租房下单流程"):

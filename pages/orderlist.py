@@ -1,3 +1,5 @@
+import time
+
 from pages.basepage import BasePage
 
 
@@ -18,3 +20,12 @@ class OrderList(BasePage):
         """
         self._params['room_type'] = room_type
         return self.steps('../data/order_list.yaml')
+
+    def cancel_order(self):
+        """
+        取消所有订单
+        """
+        elements = self.steps('../data/order_list.yaml')
+        for el in elements:
+            el.click()
+            time.sleep(10)

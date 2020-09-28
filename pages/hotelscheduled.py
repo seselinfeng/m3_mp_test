@@ -1,4 +1,5 @@
 from pages.basepage import BasePage
+from pages.switch import Switch
 
 
 class HotelScheduled(BasePage):
@@ -13,6 +14,13 @@ class HotelScheduled(BasePage):
         self._params["phone"] = phone
         self.step('../data/hotel_scheduled.yaml')
         return HotelScheduled(self._mini)
+
+    def equipment_rental(self):
+        """
+        设备租赁
+        """
+        self.step('../data/hotel_scheduled.yaml')
+        return Switch(self._mini)
 
     def get_fee(self):
         """

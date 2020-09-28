@@ -17,3 +17,10 @@ class OrderDetail(BasePage):
         """
         result = self.step('../data/order_detail.yaml')
         return result
+
+    def get_switch(self):
+        """
+        获取游戏机信息
+        """
+        result = self.step('../data/order_detail.yaml')
+        return result
