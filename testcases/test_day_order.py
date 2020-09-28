@@ -22,7 +22,7 @@ class TestDayOrder:
                 room_type).save_order(name, phone)
         with allure.step("断言日租房费"):
             hotel_scheduled.get_fee()
-            time.sleep(10)
+        time.sleep(10)
         with allure.step("去支付"):
             hotel_scheduled.goto_pay()
         time.sleep(10)
@@ -48,7 +48,7 @@ class TestDayOrder:
                                       phone)
         with allure.step("断言日租房费"):
             hotel_scheduled.get_fee()
-            time.sleep(10)
+        time.sleep(10)
         with allure.step("去支付"):
             hotel_scheduled.goto_pay()
         time.sleep(10)

@@ -27,6 +27,7 @@ class HotelScheduled(BasePage):
         :return: HotelScheduled
         """
         self.step('../data/hotel_scheduled.yaml')
+        # mock 支付接口
         mock_location = {"appId": None}
         self._mini.app.mock_wx_method("requestPayment", result=mock_location)
         return HotelScheduled(self._mini)

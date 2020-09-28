@@ -4,6 +4,8 @@ import minium
 import yaml
 from minium import WXMinium
 
+from pages.decorator import handle_black
+
 
 class BasePage(minium.MiniTest):
     _params = {}  # 参数化的数据
@@ -12,6 +14,7 @@ class BasePage(minium.MiniTest):
         super(BasePage, self).__init__()
         self._mini = mini
 
+    @handle_black
     def find(self, locator, value: str = None):
         """
         查找元素
@@ -28,6 +31,7 @@ class BasePage(minium.MiniTest):
             element = self._mini.app.get_current_page().get_element(locator, inner_text=value)
         return element
 
+    @handle_black
     def finds(self, locator, value: str = None):
         """
         查找多个元素

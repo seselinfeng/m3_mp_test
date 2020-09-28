@@ -1,8 +1,8 @@
+import time
 import allure
-from appium.webdriver.common.mobileby import MobileBy
-from selenium.webdriver.common.by import By
+from common.log import Log
 
-from pages.basepage import BasePage
+log = Log()
 
 
 def handle_black(func):
@@ -11,13 +11,11 @@ def handle_black(func):
     :param func:
     :return:
     """
+
     def handle(*args, **kwargs):
+        from pages.basepage import BasePage
         # 首次进入隐私协议黑名单
         _black_list = [
-            (By.XPATH, "//*[@text='确认']"),
-            (By.XPATH, "//*[@text='下次再说']"),
-            (By.XPATH, "//*[@text='确定']"),
-            (MobileBy.ID, "com.xueqiu.android:id/tv_agree"),
         ]
         # 最大重试次数
         _max_error_count = 3
@@ -26,21 +24,22 @@ def handle_black(func):
         # 拿到BasePage实例对象
         instance: BasePage = args[0]
         try:
+            log.info("run " + func.__name__ + "\n args: \n" + repr(args[1:]) + "\n" + repr(kwargs))
             element = func(*args, **kwargs)
             # 重置失败次数
             _error_count = 0
-            instance._driver.implicitly_wait(10)
+            time.sleep(5)
             return element
         except Exception as e:
             # 错误日志
+            log.error("element not found, handle black list")
             # 错误截图
-            instance.screenshot("../screenshot/tmp.png")
+            instance._mini.app.screen_shot("../screenshot/tmp.png")
             with open("tmp.png", "rb") as f:
                 content = f.read()
             allure.attach(content, attachment_type=allure.attachment_type.PNG)
-            instance._driver.get_screenshot_as_png()
             # 缩短隐式等待时间，优化速度
-            instance._driver.implicitly_wait(1)
+            time.sleep(2)
             # 如果超出最大处理次数，抛出异常
             if _error_count > _max_error_count:
                 raise e
