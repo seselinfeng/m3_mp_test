@@ -16,3 +16,9 @@ class Routing(BasePage):
         :return: Page
         """
         return self._mini.app.switch_tab("/pages/home/home")
+
+    def goto_my(self):
+        """
+        跳转到我的页面
+        """
+        return self._mini.app.switch_tab("/pages/member/member")

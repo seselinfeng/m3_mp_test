@@ -11,9 +11,10 @@ class OrderList(BasePage):
         """
         self.step('../data/order_list.yaml')
 
-    def get_order_list(self):
+    def get_order_list(self, room_type):
         """
         获取当前页面订单元素列表
         :return:
         """
+        self._params['room_type'] = room_type
         return self.steps('../data/order_list.yaml')

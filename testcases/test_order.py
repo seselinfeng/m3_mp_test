@@ -10,6 +10,7 @@ class TestOrder:
     def setup(self):
         self.app = App()
         self.main = self.app.start().main()
+        self.my = self.app.start().my()
         self.routing = self.app.start().routing()
         self.order_list = self.app.start().order_list()
 
@@ -19,12 +20,14 @@ class TestOrder:
         with allure.step("日租房下单流程"):
             self.main.goto_day_hotel_list().goto_hotel_detail().goto_hotel_scheduled(room_type).save_order(name, phone)
         time.sleep(10)
-        # 去订单列表页
-        with allure.step("跳转到订单列表页面"):
-            self.routing.goto_order_list()
+        # 去我的页面
+        with allure.step("跳转到我的页面"):
+            self.routing.goto_my()
         time.sleep(10)
+        with allure.step("跳转到订单列表"):
+            self.my.goto_order_list()
         with allure.step("获取当前页面第一个订单,并点击"):
-            self.order_list.get_order_list()[0].click()
+            self.order_list.get_order_list(room_type)[0].click()
         time.sleep(10)
         with allure.step("获取订单详情页面数据，并断言"):
             pass
@@ -35,12 +38,14 @@ class TestOrder:
         with allure.step("时租房下单流程"):
             self.main.goto_hour_hotel_list().goto_hotel_detail().goto_hotel_scheduled(room_type).save_order(name, phone)
         time.sleep(10)
-        # 去订单列表页
-        with allure.step("跳转到订单列表页面"):
-            self.routing.goto_order_list()
+        # 去我的页面
+        with allure.step("跳转到我的页面"):
+            self.routing.goto_my()
         time.sleep(10)
+        with allure.step("跳转到订单列表"):
+            self.my.goto_order_list()
         with allure.step("获取当前页面第一个订单,并点击"):
-            self.order_list.get_order_list()[0].click()
+            self.order_list.get_order_list(room_type)[0].click()
         time.sleep(10)
         with allure.step("获取订单详情页面数据，并断言"):
             pass
@@ -52,12 +57,14 @@ class TestOrder:
             self.main.goto_night_hotel_list().goto_hotel_detail().goto_hotel_scheduled(room_type).save_order(name,
                                                                                                              phone)
         time.sleep(10)
-        # 去订单列表页
-        with allure.step("跳转到订单列表页面"):
-            self.routing.goto_order_list()
+        # 去我的页面
+        with allure.step("跳转到我的页面"):
+            self.routing.goto_my()
         time.sleep(10)
+        with allure.step("跳转到订单列表"):
+            self.my.goto_order_list()
         with allure.step("获取当前页面第一个订单,并点击"):
-            self.order_list.get_order_list()[0].click()
+            self.order_list.get_order_list(room_type)[0].click()
         time.sleep(10)
         with allure.step("获取订单详情页面数据，并断言"):
             pass
@@ -71,12 +78,14 @@ class TestOrder:
                 room_type).save_order(name,
                                       phone)
         time.sleep(10)
-        # 去订单列表页
-        with allure.step("跳转到订单列表页面"):
-            self.routing.goto_order_list()
+        # 去我的页面
+        with allure.step("跳转到我的页面"):
+            self.routing.goto_my()
         time.sleep(10)
+        with allure.step("跳转到订单列表"):
+            self.my.goto_order_list()
         with allure.step("获取当前页面第一个订单,并点击"):
-            self.order_list.get_order_list()[0].click()
+            self.order_list.get_order_list(room_type)[0].click()
         time.sleep(10)
         with allure.step("获取订单详情页面数据，并断言"):
             pass

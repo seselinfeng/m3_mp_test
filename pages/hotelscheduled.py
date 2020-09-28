@@ -12,4 +12,5 @@ class HotelScheduled(BasePage):
         self._params["name"] = name
         self._params["phone"] = phone
         self.step('../data/hotel_scheduled.yaml')
+        self.app.restart()
         return HotelScheduled(self._mini)

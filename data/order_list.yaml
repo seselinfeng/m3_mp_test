@@ -6,5 +6,5 @@ scroll_to_footer:
 get_order_list:
   - selector: .info
     type: elements
-    wait_data_contains: IP房
+    wait_data_contains: ${room_type}
 

@@ -1,0 +1,6 @@
+goto_order_list:
+  - selector: .ordertitle
+    params:
+      inner_text: 酒店订单
+      max_timeout: 30
+    action: click
