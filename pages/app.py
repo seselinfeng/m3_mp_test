@@ -18,7 +18,7 @@ class App(BasePage):
         self._mini.app.exit()
 
     def restart(self):
-        pass
+        self._mini.reset_remote_debug()
 
     def main(self):
         return Main(self._mini)

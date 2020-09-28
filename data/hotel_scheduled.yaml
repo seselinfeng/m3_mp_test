@@ -9,8 +9,15 @@ save_order:
       max_timeout: 30
     action: input
     value: ${phone}
+goto_pay:
   - selector: button
     params:
       inner_text: 去支付
+      max_timeout: 30
+    action: click
+get_fee:
+  - selector: .color_aa.color_aa.flex.flex.v-center.v-center.pr30.pr30
+    params:
+      inner_text: 明细
       max_timeout: 30
     action: click
