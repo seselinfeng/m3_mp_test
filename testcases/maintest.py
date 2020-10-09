@@ -25,7 +25,7 @@ class MainTest(minium.MiniTest):
         # 下单
         self.main.goto_hotel_list().goto_hotel_detail().goto_hotel_scheduled().save_order()
 
-    @allure.title("测试demo")
+    # @allure.title("测试demo")
     def test_demo(self):
         with allure.step("跳转到订单列表页"):
             self.routing.goto_order_list()

@@ -1,11 +1,11 @@
 get_amount_paid:
-  - selector: .color_111A34.fs26
+  - selector: .fc-111A34.fs-26
     params:
       max_timeout: 30
     action: get_text
 
 get_username:
-  - selector: .color_111A34.fs30.margin_top22.room_info_bottom_line
+  - selector: .fc-111A34.fs-30.margin-top22.room-info-bottom-line
     params:
       max_timeout: 30
     action: get_text

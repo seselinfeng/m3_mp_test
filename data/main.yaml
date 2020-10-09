@@ -42,7 +42,7 @@ set_day_date:
       inner_text: ${end_date}
       max_timeout: 30
     action: click
-  - selector: .fs40.fs40
+  - selector: .van-button__text.van-button__text
     params:
       inner_text: 确定
       max_timeout: 30

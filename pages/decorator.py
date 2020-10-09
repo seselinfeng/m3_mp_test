@@ -1,4 +1,6 @@
 import time
+import datetime
+
 import allure
 from common.log import Log
 
@@ -23,26 +25,27 @@ def handle_black(func):
         _error_count = 0
         # 拿到BasePage实例对象
         instance: BasePage = args[0]
-        try:
-            log.info("run " + func.__name__ + "\n args: \n" + repr(args[1:]) + "\n" + repr(kwargs))
-            element = func(*args, **kwargs)
-            # 重置失败次数
-            _error_count = 0
-            time.sleep(5)
+        log.info("run " + func.__name__ + "\n args: \n" + repr(args) + "\n" + repr(kwargs))
+        element = func(*args, **kwargs)
+        # 重置失败次数
+        _error_count = 0
+        time.sleep(5)
+        if element:
             return element
-        except Exception as e:
+        else:
             # 错误日志
-            log.error("element not found, handle black list")
+            log.info("element not found, handle black list")
             # 错误截图
-            instance._mini.app.screen_shot("../screenshot/tmp.png")
-            with open("tmp.png", "rb") as f:
+            filename = "%s.png" % datetime.datetime.now().strftime("%H%M%S%f")
+            instance._mini.app.screen_shot(save_path=f"../screenshot/{filename}")
+            with open(f"{filename}", "rb") as f:
                 content = f.read()
             allure.attach(content, attachment_type=allure.attachment_type.PNG)
             # 缩短隐式等待时间，优化速度
             time.sleep(2)
             # 如果超出最大处理次数，抛出异常
             if _error_count > _max_error_count:
-                raise e
+                raise Exception
             _error_count += 1
             # 判断获取到的元素是否属于黑名单
             for ele in _black_list:
@@ -52,6 +55,6 @@ def handle_black(func):
                 if len(elementlist) > 0:
                     elementlist[0].click()
                     return handle(*args, **kwargs)
-            raise e
+            raise Exception
 
     return handle

@@ -26,7 +26,7 @@ class TestDayOrder:
             room_rate = '1.00'
             preferential_amount = '0.00'
             amount_paid = '1.00'
-            assert fee_result == f'房费总额：¥{room_rate}\n优惠金额： ¥{preferential_amount}\n实付金额：¥{amount_paid}', f'当前返回实际值为: 房费总额：¥{room_rate}\n优惠金额： ¥{preferential_amount}\n实付金额：¥{amount_paid}'
+            assert fee_result == f'房费总额：¥{room_rate}\n优惠金额： ¥{preferential_amount}\n实付金额：¥{amount_paid}', f'当前返回实际值为: {fee_result}'
         with allure.step("去支付"):
             hotel_scheduled.goto_pay()
         time.sleep(5)
@@ -35,8 +35,8 @@ class TestDayOrder:
         with allure.step("获取订单详情页面数据，并断言"):
             paid_result = self.order_detail.get_amount_paid()
             username_result = self.order_detail.get_username()
-            assert paid_result == f"总价：¥{amount_paid}", f'当前返回的实际值为: 总价：¥{amount_paid}'
-            assert username_result == f"入住人：{name}", f'当前返回的实际值为:入住人：{name} '
+            assert paid_result == f"总价：¥{amount_paid}", f'当前返回的实际值为: {paid_result}'
+            assert username_result == f"入住人：{name}", f'当前返回的实际值为:{username_result}'
 
     @allure.title("日租房远期多天预定流程测试")
     @pytest.mark.parametrize(("name", "phone", "room_type", "start_date", "end_date"),
@@ -49,10 +49,10 @@ class TestDayOrder:
                                       phone)
         with allure.step("断言日租房费"):
             fee_result = hotel_scheduled.get_fee()
-            room_rate = '1.00'
+            room_rate = '2.00'
             preferential_amount = '0.00'
             amount_paid = '2.00'
-            assert fee_result == f'房费总额：¥{room_rate}\n优惠金额： ¥{preferential_amount}\n实付金额：¥{amount_paid}', f'当前返回实际值为: 房费总额：¥{room_rate}\n优惠金额： ¥{preferential_amount}\n实付金额：¥{amount_paid}'
+            assert fee_result == f'房费总额：¥{room_rate}\n优惠金额： ¥{preferential_amount}\n实付金额：¥{amount_paid}', f'当前返回实际值为:{fee_result}'
         with allure.step("去支付"):
             hotel_scheduled.goto_pay()
         time.sleep(5)
@@ -61,11 +61,12 @@ class TestDayOrder:
         with allure.step("获取订单详情页面数据，并断言"):
             paid_result = self.order_detail.get_amount_paid()
             username_result = self.order_detail.get_username()
-            assert paid_result == f"总价：¥{amount_paid}", f'当前返回的实际值为: 总价：¥{amount_paid}'
-            assert username_result == f"入住人：{name}", f'当前返回的实际值为:入住人：{name} '
+            assert paid_result == f"总价：¥{amount_paid}", f'当前返回的实际值为: {paid_result}'
+            assert username_result == f"入住人：{name}", f'当前返回的实际值为:{username_result} '
 
     @allure.title("日租房预定流程（带游戏机）测试")
-    @pytest.mark.parametrize(("name", "phone", "room_type"), get_data('test_switch_day_order', '../data/test_order.yaml'))
+    @pytest.mark.parametrize(("name", "phone", "room_type"),
+                             get_data('test_switch_day_order', '../data/test_order.yaml'))
     def test_switch_day_order(self, name, phone, room_type):
         """
         租赁游戏机订单
@@ -79,7 +80,7 @@ class TestDayOrder:
             value_added_services = '120.00'
             preferential_amount = '0.00'
             amount_paid = '121.00'
-            assert fee_result == f'房费总额：¥{room_rate}\n增值服务：¥{value_added_services}\n优惠金额： ¥{preferential_amount}\n实付金额：¥{amount_paid}', f'当前返回实际值为: 房费总额：¥{room_rate}\n增值服务：¥{value_added_services}\n优惠金额： ¥{preferential_amount}\n实付金额：¥{amount_paid}'
+            assert fee_result == f'房费总额：¥{room_rate}\n增值服务：¥{value_added_services}\n优惠金额： ¥{preferential_amount}\n实付金额：¥{amount_paid}', f'当前返回实际值为: {fee_result}'
         with allure.step("去支付"):
             hotel_scheduled.goto_pay()
         time.sleep(5)
@@ -89,9 +90,9 @@ class TestDayOrder:
             paid_result = self.order_detail.get_amount_paid()
             username_result = self.order_detail.get_username()
             switch_result = self.order_detail.get_switch()
-            assert paid_result == f"总价：¥{amount_paid}", f'当前返回的实际值为: 总价：¥{amount_paid}'
-            assert username_result == f"入住人：{name}", f'当前返回的实际值为:入住人：{name}'
-            assert switch_result == f"(含游戏机租金120元)", f'(含游戏机租金{value_added_services}元)'
+            assert paid_result == f"总价：¥{amount_paid}", f'当前返回的实际值为: {paid_result}'
+            assert username_result == f"入住人：{name}", f'当前返回的实际值为:{username_result}'
+            assert switch_result == f"(含游戏机租金120元)", f'当前返回的实际值为:{switch_result}'
 
     def teardown(self):
         self.routing.goto_main()
