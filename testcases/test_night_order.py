@@ -126,4 +126,4 @@ class TestNightOrder:
             assert switch_result == f"(含游戏机租金60元)", f'(含游戏机租金{value_added_services}元)'
 
     def teardown(self):
-        self.routing.goto_my()
+        self.routing.goto_main()

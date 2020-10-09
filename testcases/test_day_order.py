@@ -38,7 +38,7 @@ class TestDayOrder:
             assert paid_result == f"总价：¥{amount_paid}", f'当前返回的实际值为: 总价：¥{amount_paid}'
             assert username_result == f"入住人：{name}", f'当前返回的实际值为:入住人：{name} '
 
-    @allure.title("日租房远期预定流程测试")
+    @allure.title("日租房远期多天预定流程测试")
     @pytest.mark.parametrize(("name", "phone", "room_type", "start_date", "end_date"),
                              get_data('test_forward_day_order', '../data/test_order.yaml'))
     def test_forward_day_order(self, name, phone, room_type, start_date, end_date):
@@ -94,4 +94,4 @@ class TestDayOrder:
             assert switch_result == f"(含游戏机租金120元)", f'(含游戏机租金{value_added_services}元)'
 
     def teardown(self):
-        self.routing.goto_my()
+        self.routing.goto_main()

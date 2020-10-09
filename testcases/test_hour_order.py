@@ -39,4 +39,4 @@ class TestHourOrder:
             assert username_result == f"入住人：{name}", f'当前返回的实际值为:入住人：{name} '
 
     def teardown(self):
-        self.routing.goto_my()
+        self.routing.goto_main()

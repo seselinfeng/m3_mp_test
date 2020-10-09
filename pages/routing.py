@@ -21,4 +21,10 @@ class Routing(BasePage):
         """
         跳转到我的页面
         """
-        return self._mini.app.switch_tab("/pages/member/member")
+        return self._mini.app.switch_tab("/pages/me/me")
+
+    def goto_m3(self):
+        """
+        跳转到M3页面
+        """
+        return self._mini.app.switch_tab("/pages/m3/m3")

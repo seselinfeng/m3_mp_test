@@ -32,7 +32,7 @@ get_fee:
       max_timeout: 30
     action: get_text
 goto_order_detail:
-  - selector: .link
+  - selector: button
     params:
       inner_text: 查看订单
       max_timeout: 30
