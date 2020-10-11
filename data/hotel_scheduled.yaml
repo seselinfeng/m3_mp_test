@@ -16,24 +16,23 @@ equipment_rental:
       max_timeout: 30
     action: click
 goto_pay:
-  - selector: button
+  - selector: .pay-now-btn.pay-now-btn
     params:
       inner_text: 去支付
       max_timeout: 30
     action: click
 get_fee:
-  - selector: .color_aa.color_aa.flex.flex.v-center.v-center.pr30.pr30
+  - selector: .mr10.mr10.fc-858B9C.fc-858B9C
     params:
       inner_text: 明细
       max_timeout: 30
     action: click
-  - selector: .item.item.last-item.last-item.tar.tar
+  - selector: .item.item.last-item.last-item.flex.flex.h-end.h-end
     params:
       max_timeout: 30
     action: get_text
-goto_order_detail:
-  - selector: button
+get_switch:
+  - locator: .flex1.flex1.fc-light.fc-light
     params:
-      inner_text: 查看订单
-      max_timeout: 30
-    action: click
+      max_timeout: 1
+    action: element_is_exists

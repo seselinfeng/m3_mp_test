@@ -1,0 +1,6 @@
+goto_order_detail:
+  - selector: button
+    params:
+      text_contains: 查看订单
+      max_timeout: 30
+    action: click

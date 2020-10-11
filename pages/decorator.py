@@ -29,20 +29,19 @@ def handle_black(func):
         element = func(*args, **kwargs)
         # 重置失败次数
         _error_count = 0
-        time.sleep(5)
         if element:
             return element
-        else:
+        while not element:
             # 错误日志
-            log.info("element not found, handle black list")
+            log.info(f"未定位到当前元素，第{_error_count + 1}次重试")
             # 错误截图
             filename = "%s.png" % datetime.datetime.now().strftime("%H%M%S%f")
             instance._mini.app.screen_shot(save_path=f"../screenshot/{filename}")
-            with open(f"{filename}", "rb") as f:
+            with open(f"../screenshot/{filename}", "rb") as f:
                 content = f.read()
-            allure.attach(content, attachment_type=allure.attachment_type.PNG)
+            allure.attach(content, func.__name__, attachment_type=allure.attachment_type.PNG)
             # 缩短隐式等待时间，优化速度
-            time.sleep(2)
+            time.sleep(1)
             # 如果超出最大处理次数，抛出异常
             if _error_count > _max_error_count:
                 raise Exception
@@ -55,6 +54,7 @@ def handle_black(func):
                 if len(elementlist) > 0:
                     elementlist[0].click()
                     return handle(*args, **kwargs)
+        else:
             raise Exception
 
     return handle

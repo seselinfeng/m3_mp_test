@@ -2,7 +2,7 @@ import inspect
 import json
 import minium
 import yaml
-from minium import WXMinium
+from minium import WXMinium, IdeNative
 
 from pages.decorator import handle_black
 
@@ -48,6 +48,27 @@ class BasePage(minium.MiniTest):
             elements = self._mini.app.get_current_page().get_elements(locator)
         return elements
 
+    def wait_data(self, locator, value: str = None):
+        """
+        等待元素出现
+        """
+        if isinstance(locator, tuple):
+            result = self._mini.app.get_current_page().wait_data_contains(*locator)
+        elif isinstance(value, dict):
+            result = self._mini.app.get_current_page().wait_data_contains(locator, **value)
+        else:
+            result = self._mini.app.get_current_page().wait_data_contains(locator, inner_text=value)
+        return result
+
+    def is_exists(self, locator, value: str = None):
+        if isinstance(locator, tuple):
+            result = self._mini.app.get_current_page().element_is_exists(*locator)
+        elif isinstance(value, dict):
+            result = self._mini.app.get_current_page().element_is_exists(locator, **value)
+        else:
+            result = self._mini.app.get_current_page().element_is_exists(locator, max_timeout=value)
+        return result
+
     def step(self, path: str = None):
         """
         操作步骤以及操作步骤的数据驱动
@@ -67,7 +88,6 @@ class BasePage(minium.MiniTest):
                 raw = raw.replace('${' + key + '}', value)
             # 反序列化
             steps = json.loads(raw)
-            print(steps)
             for step in steps:
                 # 定位元素
                 if 'selector' in step.keys():
@@ -88,6 +108,9 @@ class BasePage(minium.MiniTest):
                     if action == 'get_text':
                         # 获取文本
                         element = element.inner_text
+                    if action == 'element_is_exists':
+                        element = self.is_exists(step.get('locator'), step.get('params'))
+
                 # 滚动页面
                 if 'scroll' in step.keys():
                     element = self.find(step.get('selector'), step.get('params'))

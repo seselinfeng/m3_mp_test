@@ -9,3 +9,8 @@ goto_hotel_scheduled:
       inner_text: 立即预订
       max_timeout: 30
     action: click
+get_root_status:
+  - selector: view[class='hd'][data-roomtype='311']>.more>.book_btn.no
+    params:
+      max_timeout: 30
+    action: get_text

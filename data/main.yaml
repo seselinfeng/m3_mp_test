@@ -63,3 +63,10 @@ set_night_date:
       inner_text: 确定
       max_timeout: 30
     action: click
+get_yesterday_date:
+  - selector: .time
+    action: click
+  - selector: .van-calendar__day.van-calendar__day.van-calendar__day--disabled.van-calendar__day--disabled
+    params:
+      text_contains: ${yesterday_date}
+      max_timeout: 30

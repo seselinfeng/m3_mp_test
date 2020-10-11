@@ -41,6 +41,15 @@ class Main(BasePage):
         self.step('../data/main.yaml')
         return Main(self._mini)
 
+    def get_yesterday_date(self, yesterday_date):
+        """
+        获取昨天的元素
+        """
+        self._params['yesterday_date'] = yesterday_date
+        element = self.step('../data/main.yaml')
+        result = element.attribute("class")
+        return result
+
     def set_night_date(self, start_date):
         """
          打开时间选择器，设置整夜房预定时间

@@ -16,7 +16,8 @@ class TestNightOrder:
         self.order_detail = self.app.start().order_detail()
 
     @allure.title("整夜房当日预定流程测试")
-    @pytest.mark.parametrize(("name", "phone", "room_type"), get_data('test_night_order', '../data/test_order.yaml'))
+    @pytest.mark.parametrize(("name", "phone", "room_type"), get_data('test_night_order',
+                                                                      '../data/test_night_order.yaml'))
     def test_night_order(self, name, phone, room_type):
         with allure.step("整夜房下单流程"):
             hotel_scheduled = self.main.goto_night_hotel_list().goto_hotel_detail().goto_hotel_scheduled(
@@ -41,7 +42,7 @@ class TestNightOrder:
 
     @allure.title("整夜房远期预定流程测试")
     @pytest.mark.parametrize(("name", "phone", "room_type", "start_date"),
-                             get_data('test_forward_night_order', '../data/test_order.yaml'))
+                             get_data('test_forward_night_order', '../data/test_night_order.yaml'))
     def test_forward_night_order(self, name, phone, room_type, start_date):
         with allure.step("整夜房下单流程"):
             hotel_scheduled = self.main.set_night_date(
@@ -67,7 +68,7 @@ class TestNightOrder:
 
     @allure.title("整夜房预定流程（带游戏机）测试")
     @pytest.mark.parametrize(("name", "phone", "room_type"),
-                             get_data('test_switch_night_order', '../data/test_order.yaml'))
+                             get_data('test_switch_night_order', '../data/test_night_order.yaml'))
     def test_switch_night_order(self, name, phone, room_type):
         """
         租赁游戏机订单
@@ -98,7 +99,7 @@ class TestNightOrder:
 
     @allure.title("整夜房远期预定流程(带游戏机)测试")
     @pytest.mark.parametrize(("name", "phone", "room_type", "start_date"),
-                             get_data('test_switch_forward_night_order', '../data/test_order.yaml'))
+                             get_data('test_switch_forward_night_order', '../data/test_night_order.yaml'))
     def test_switch_forward_night_order(self, name, phone, room_type, start_date):
         with allure.step("整夜房下单流程"):
             hotel_scheduled = self.main.set_night_date(

@@ -6,6 +6,7 @@ from pages.main import Main
 from pages.my import My
 from pages.orderdetail import OrderDetail
 from pages.orderlist import OrderList
+from pages.paysuccess import PaySuccess
 from pages.routing import Routing
 
 
@@ -35,3 +36,6 @@ class App(BasePage):
 
     def order_detail(self):
         return OrderDetail(self._mini)
+
+    def pay_success(self):
+        return PaySuccess(self._mini)

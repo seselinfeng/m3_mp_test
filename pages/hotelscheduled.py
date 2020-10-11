@@ -1,4 +1,5 @@
 from pages.basepage import BasePage
+from pages.paysuccess import PaySuccess
 from pages.switch import Switch
 
 
@@ -28,7 +29,6 @@ class HotelScheduled(BasePage):
         """
         result = {}
         result = self.step('../data/hotel_scheduled.yaml')
-        print(result)
         return result
 
     def goto_pay(self):
@@ -38,10 +38,13 @@ class HotelScheduled(BasePage):
         """
         self.step('../data/hotel_scheduled.yaml')
         # mock 支付接口
-        mock_location = {"appId": None}
+        mock_location = {"errMsg": "requestPayment:ok"}
         self._mini.app.mock_wx_method("requestPayment", result=mock_location)
-        return HotelScheduled(self._mini)
+        return PaySuccess(self._mini)
 
-    def goto_order_detail(self):
-        self.step('../data/hotel_scheduled.yaml')
-        return HotelScheduled(self._mini)
+    def get_switch(self):
+        """
+        判断是否存在switch机租赁模块
+        """
+        result = self.step('../data/hotel_scheduled.yaml')
+        return result

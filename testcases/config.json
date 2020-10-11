@@ -1,8 +1,20 @@
-//{
-//  "debug_mode": "debug",
-//  "enable_app_log": true,
-//  "platform": "Android",
-//  "device_desire": {
-//    "serial": "988b1c444c464a5530"
-//  }
-//}
+{
+  "debug_mode": "debug",
+  "enable_app_log": true,
+  "platform": "Android",
+  "app": "wx",
+  "close_ide": false,
+  "full_reset": false,
+  "test_port": 9420,
+  "assert_capture": true,
+  "use_push": true,
+  "auto_relaunch": true,
+  "remote_connect_timeout": 10,
+  "account_info": {
+    "wx_nick_name": "逍遥",
+    "open_id": "oEm5P5cJWSB-uQRxiHbxlWOoyeVc"
+  },
+  "device_desire": {
+    "serial": "988b1c444c464a5530"
+  }
+}
