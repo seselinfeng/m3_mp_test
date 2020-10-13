@@ -63,3 +63,10 @@ pip install -r requirements.txt
 3. pytest支持数据驱动更为合理
 4. 集成allure进行测试报告的输出
 
+## jenkins + allure
+1. 目前简单做法，将allure报告发布到jenkins中，使用jenkins的allure插件查看本地报告
+2. jenkins查看报告方法：
+   - 查看报告路径 http://192.168.9.173:10800/job/M3_UI_TEST_REPORT/
+   - 用户名 root
+   - 密码 root123
+
