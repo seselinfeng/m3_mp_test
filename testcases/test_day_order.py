@@ -28,7 +28,10 @@ class TestDayOrder:
             fee_result = hotel_scheduled.get_fee()
             room_rate = except_result.get("expect_result")[0].get("房费总额")
             amount_paid = except_result.get("expect_result")[1].get("实付金额")
-            assert fee_result == f'房费总额:\n{room_rate}\n实付金额:\n{amount_paid}', f'当前返回实际值为: {fee_result}'
+            try:
+                assert fee_result == f'房费总额:\n{room_rate}\n实付金额:\n{amount_paid}', f'当前返回实际值为: {fee_result}'
+            except AssertionError as e:
+                self.app.get_image()
         with allure.step("支付房费"):
             pay_success = hotel_scheduled.goto_pay()
         with allure.step("跳转到订单详情"):
@@ -39,8 +42,11 @@ class TestDayOrder:
             username_result = self.order_detail.get_username()
             totel_paid = except_result.get("expect_result")[2].get("总价")
             room_user = except_result.get("expect_result")[3].get("入住人")
-            assert paid_result == f"总价：{totel_paid}", f'当前返回的实际值为: {paid_result}'
-            assert username_result == f"入住人：{room_user}", f'当前返回的实际值为:{username_result}'
+            try:
+                assert paid_result == f"总价：{totel_paid}", f'当前返回的实际值为: {paid_result}'
+                assert username_result == f"入住人：{room_user}", f'当前返回的实际值为:{username_result}'
+            except AssertionError as e:
+                self.app.get_image()
         with allure.step("取消订单，释放房态"):
             self.order_detail.cancel_order()
 
@@ -104,7 +110,6 @@ class TestDayOrder:
             assert username_result == f"入住人：{room_user}", f'当前返回的实际值为:{username_result}'
         with allure.step("继续下单测试该房源"):
             self.routing.goto_main()
-            self.main.tap_night().tap_search_hotels()
             result = self.main.goto_day_hotel_list().goto_hotel_detail().get_root_status(
                 room_code)
             assert result == '满房', f"当前实际返回值为{result}"

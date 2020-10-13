@@ -1,3 +1,4 @@
+import datetime
 import inspect
 import json
 import minium
@@ -77,6 +78,16 @@ class BasePage(minium.MiniTest):
         调用原生JS方法
         """
         return self._mini.app.get_current_page().call_method(func, args)
+
+    def get_image(self):
+        """
+        断言失败截图
+        """
+        filename = "%s.png" % datetime.datetime.now().strftime("%H%M%S%f")
+        self._mini.app.screen_shot(save_path=f"../screenshot/{filename}")
+        with open(f"../screenshot/{filename}", "rb") as f:
+            content = f.read()
+        allure.attach(content, filename, attachment_type=allure.attachment_type.PNG)
 
     def step(self, path: str = None):
         """

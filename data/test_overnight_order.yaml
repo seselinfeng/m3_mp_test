@@ -1,7 +1,7 @@
 test_night_order:
   - - '李福庆'
     - '18516126760'
-    - '标准大床房'
+    - '自动测试房源二'
     - expect_result:
         - 房费总额: ¥3.00
         - 实付金额: ¥3.00
@@ -19,7 +19,7 @@ test_night_order:
 test_forward_night_order:
   - - '李福庆'
     - '18516126760'
-    - '标准大床房'
+    - '自动测试房源二'
     - '15'
     - '16'
     - expect_result:
@@ -41,7 +41,7 @@ test_forward_night_order:
 test_switch_night_order:
   - - '李福庆'
     - '18516126760'
-    - '标准大床房'
+    - '自动测试房源二'
     - expect_result:
         - 房费总额: ¥3.00
         - 增值服务: ¥60.00
@@ -52,14 +52,14 @@ test_switch_night_order:
 test_switch_forward_night_order:
   - - '李福庆'
     - '18516126760'
-    - '标准大床房'
+    - '自动测试房源'
     - '15'
     - '16'
     - expect_result:
-        - 房费总额: ¥3.00
+        - 房费总额: ¥100.00
         - 增值服务: ¥60.00
-        - 实付金额: ¥63.00
-        - 总价: ¥63.00
+        - 实付金额: ¥160.00
+        - 总价: ¥160.00
         - 入住人: 李福庆
 
 test_night_nh_order:

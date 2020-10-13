@@ -6,6 +6,7 @@ from common.processingdata import get_data
 from pages.app import App
 
 
+@allure.feature("整夜房预定订单模块")
 class TestNightOrder:
     def setup(self):
         self.app = App()
