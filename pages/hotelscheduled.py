@@ -42,6 +42,12 @@ class HotelScheduled(BasePage):
         self._mini.app.mock_wx_method("requestPayment", result=mock_location)
         return PaySuccess(self._mini)
 
+    def goto_pay_fail(self):
+        """
+        支付失败
+        """
+        return self.call_js_method("checkSubmitOrder")
+
     def get_switch(self):
         """
         判断是否存在switch机租赁模块

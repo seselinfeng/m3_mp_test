@@ -1,5 +1,4 @@
 from pages.basepage import BasePage
-from pages.orderlist import OrderList
 
 
 class OrderDetail(BasePage):
@@ -30,7 +29,6 @@ class OrderDetail(BasePage):
         """
         取消订单
         """
-        self.step('../data/order_detail.yaml')
-        # 待处理
-        self.native.handle_modal("确定","温馨提示")
-        return OrderList(self._mini)
+        # self.step('../data/order_detail.yaml')
+        self.call_js_method("confirmCancel")
+        return OrderDetail(self._mini)

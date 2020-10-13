@@ -61,6 +61,9 @@ class BasePage(minium.MiniTest):
         return result
 
     def is_exists(self, locator, value: str = None):
+        """
+        判断元素是否存在
+        """
         if isinstance(locator, tuple):
             result = self._mini.app.get_current_page().element_is_exists(*locator)
         elif isinstance(value, dict):
@@ -68,6 +71,12 @@ class BasePage(minium.MiniTest):
         else:
             result = self._mini.app.get_current_page().element_is_exists(locator, max_timeout=value)
         return result
+
+    def call_js_method(self, func, args=None):
+        """
+        调用原生JS方法
+        """
+        return self._mini.app.get_current_page().call_method(func, args)
 
     def step(self, path: str = None):
         """
