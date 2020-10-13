@@ -21,9 +21,39 @@ class Main(BasePage):
         self.step('../data/main.yaml')
         return HotelList(self._mini)
 
+    def tap_night(self):
+        """
+        点击整夜
+        """
+        self.step('../data/main.yaml')
+        return Main(self._mini)
+
+    def tap_night_time_select(self):
+        """
+        点击整夜房时间选择器
+        """
+        self.step('../data/main.yaml')
+        return Main(self._mini)
+
+    def tap_search_hotels(self):
+        """
+        点击搜索酒店
+        """
+        self.step('../data/main.yaml')
+        return HotelList(self._mini)
+
+    def get_night_yesterday_date(self, yesterday_date):
+        """
+        获取整夜房昨天时间的可选中状态
+        """
+        self._params['yesterday_date'] = yesterday_date
+        element = self.step('../data/main.yaml')
+        result = element.attribute("class")
+        return result
+
     def goto_night_hotel_list(self):
         """
-        选择时租房后，跳转到酒店列表页
+        选择整夜房后，跳转到酒店列表页
         :return:
         """
         self.step('../data/main.yaml')
@@ -50,7 +80,7 @@ class Main(BasePage):
         result = element.attribute("class")
         return result
 
-    def set_night_date(self, start_date):
+    def set_night_date(self, start_date, end_date):
         """
          打开时间选择器，设置整夜房预定时间
         :param start_date: 开始日期  ex 1
@@ -58,5 +88,6 @@ class Main(BasePage):
         :return:
         """
         self._params['start_date'] = start_date
+        self._params['end_date'] = end_date
         self.step('../data/main.yaml')
         return Main(self._mini)

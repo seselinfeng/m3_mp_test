@@ -17,6 +17,27 @@ goto_hour_hotel_list:
       max_timeout: 30
     action: click
 
+tap_night:
+  - selector: view
+    params:
+      inner_text: 整夜
+      max_timeout: 30
+    action: click
+
+tap_night_time_select:
+  - selector: .ml20.ml20
+    params:
+      inner_text: 入住
+      max_timeout: 30
+    action: click
+
+tap_search_hotels:
+  - selector: button
+    params:
+      inner_text: 搜索酒店
+      max_timeout: 30
+    action: click
+
 goto_night_hotel_list:
   - selector: view
     params:
@@ -47,8 +68,14 @@ set_day_date:
       inner_text: 确定
       max_timeout: 30
     action: click
+
 set_night_date:
-  - selector: .ml20
+  - selector: view
+    params:
+      inner_text: 整夜
+      max_timeout: 30
+    action: click
+  - selector: .ml20.ml20
     params:
       inner_text: 入住
       max_timeout: 30
@@ -58,14 +85,26 @@ set_night_date:
       inner_text: ${start_date}
       max_timeout: 30
     action: click
-  - selector: .fs40.fs40
+  - selector: view
+    params:
+      inner_text: ${end_date}
+      max_timeout: 30
+    action: click
+  - selector: .van-button__text.van-button__text
     params:
       inner_text: 确定
       max_timeout: 30
     action: click
+
 get_yesterday_date:
   - selector: .time
     action: click
+  - selector: .van-calendar__day.van-calendar__day.van-calendar__day--disabled.van-calendar__day--disabled
+    params:
+      text_contains: ${yesterday_date}
+      max_timeout: 30
+
+get_night_yesterday_date:
   - selector: .van-calendar__day.van-calendar__day.van-calendar__day--disabled.van-calendar__day--disabled
     params:
       text_contains: ${yesterday_date}

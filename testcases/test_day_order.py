@@ -78,9 +78,9 @@ class TestDayOrder:
             self.order_detail.cancel_order()
 
     @allure.title("日租房房态已满测试")
-    @pytest.mark.parametrize(("name", "phone", "room_type", "except_result"),
+    @pytest.mark.parametrize(("name", "phone", "room_type", "room_code", "except_result"),
                              get_data('test_day_nh_order', '../data/test_day_order.yaml'))
-    def test_day_nh_order(self, name, phone, room_type, except_result):
+    def test_day_nh_order(self, name, phone, room_type, room_code, except_result):
         """日租房预定当日房态已满测试"""
         with allure.step(f"{room_type}-日租房下单流程"):
             hotel_scheduled = self.main.goto_day_hotel_list().goto_hotel_detail().goto_hotel_scheduled(
@@ -104,8 +104,9 @@ class TestDayOrder:
             assert username_result == f"入住人：{room_user}", f'当前返回的实际值为:{username_result}'
         with allure.step("继续下单测试该房源"):
             self.routing.goto_main()
+            self.main.tap_night().tap_search_hotels()
             result = self.main.goto_day_hotel_list().goto_hotel_detail().get_root_status(
-                room_type)
+                room_code)
             assert result == '满房', f"当前实际返回值为{result}"
 
     @allure.title("日租房选择前一天预定测试")

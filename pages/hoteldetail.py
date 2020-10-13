@@ -14,10 +14,10 @@ class HotelDetail(BasePage):
         self.step('../data/hotel_detail.yaml')
         return HotelScheduled(self._mini)
 
-    def get_root_status(self, room_type):
+    def get_root_status(self, room_code):
         """
         获取当前房型的房态
         """
-        self._params['room_type'] = room_type
+        self._params['room_code'] = room_code
         result = self.step('../data/hotel_detail.yaml')
         return result

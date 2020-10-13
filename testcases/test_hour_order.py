@@ -20,7 +20,7 @@ class TestHourOrder:
     @pytest.mark.parametrize(("name", "phone", "room_type", "except_result"),
                              get_data('test_hour_order', '../data/test_hour_order.yaml'))
     def test_hour_order(self, name, phone, room_type, except_result):
-        """日租房预定当日酒店流程测试"""
+        """时租房预定当日酒店流程测试"""
         with allure.step(f"{room_type}-时租房下单流程"):
             hotel_scheduled = self.main.goto_hour_hotel_list().goto_hotel_detail().goto_hotel_scheduled(
                 room_type).save_order(name, phone)
