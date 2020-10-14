@@ -18,9 +18,16 @@ class TestHourOrder:
 
     @allure.title("时租房预定流程测试")
     @pytest.mark.parametrize(("name", "phone", "room_type", "except_result"),
-                             get_data('test_hour_order', '../data/test_hour_order.yaml'))
+                             get_data('test_hour_order', '../data/pro_data/test_hour_order.yaml'))
     def test_hour_order(self, name, phone, room_type, except_result):
-        """时租房预定当日酒店流程测试"""
+        """
+        时租房预定当日酒店流程测试
+        :param name: 入住人
+        :param phone: 电话号码
+        :param room_type: 房型名称
+        :param except_result: 期望结果集
+        :return: None
+        """
         with allure.step(f"{room_type}-时租房下单流程"):
             hotel_scheduled = self.main.goto_hour_hotel_list().goto_hotel_detail().goto_hotel_scheduled(
                 room_type).save_order(name, phone)
@@ -46,10 +53,15 @@ class TestHourOrder:
 
     @allure.title("时租房预定流程（带游戏机）测试")
     @pytest.mark.parametrize(("name", "phone", "room_type", "except_result"),
-                             get_data('test_switch_hour_order', '../data/test_hour_order.yaml'))
+                             get_data('test_switch_hour_order', '../data/pro_data/test_hour_order.yaml'))
     def test_switch_hour_order(self, name, phone, room_type, except_result):
         """
         租赁游戏机订单
+        :param name: 入住人
+        :param phone: 电话号码
+        :param room_type: 房型名称
+        :param except_result: 期望结果集
+        :return: None
         """
         with allure.step("时租房下单流程"):
             hotel_scheduled = self.main.goto_hour_hotel_list().goto_hotel_detail().goto_hotel_scheduled(
@@ -73,9 +85,10 @@ class TestHourOrder:
             room_user = except_result.get("expect_result")[4].get("入住人")
             assert paid_result == f"总价：{totel_paid}", f'当前返回的实际值为: {paid_result}'
             assert username_result == f"入住人：{room_user}", f'当前返回的实际值为:{username_result}'
-            assert switch_result == f"(含游戏机租金30元)", f'当前返回的实际值为:{switch_result}'
+            assert switch_result == f"(含游戏机租金20元)", f'当前返回的实际值为:{switch_result}'
         with allure.step("取消订单，释放房态"):
             self.order_detail.cancel_order()
 
     def teardown(self):
         self.routing.goto_main()
+        time.sleep(1)

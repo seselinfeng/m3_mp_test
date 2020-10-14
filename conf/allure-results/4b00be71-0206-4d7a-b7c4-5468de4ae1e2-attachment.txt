@@ -1,0 +1,684 @@
+[32mINFO    [0m root:wx_minium.py:67 {}
+[32mINFO    [0m root:wx_minium.py:111 [32mStarting dev tool and launch MiniProgram project ...[0m
+[33mWARNING [0m root:wx_minium.py:163 [33mCan not find project_path in config, that means you must open dev tool by automation way first[0m
+[32mINFO    [0m root:wx_minium.py:198 [32mTrying to connect Dev tool ...[0m
+[32mINFO    [0m root:connection.py:106 [32mconnect to WebChatTools successfully[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"bb35d236-d093-40fd-ab5f-f324a896f98c","method":"App.addBinding","params":{"name":"onAppRouteDone"}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"bb35d236-d093-40fd-ab5f-f324a896f98c","result":{}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: bb35d236-d093-40fd-ab5f-f324a896f98c[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"bb35d236-d093-40fd-ab5f-f324a896f98c","result":{}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"bb35d236-d093-40fd-ab5f-f324a896f98c","result":{}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: bb35d236-d093-40fd-ab5f-f324a896f98c[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"bb35d236-d093-40fd-ab5f-f324a896f98c","result":{}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: bb35d236-d093-40fd-ab5f-f324a896f98c[0m
+[35mDEBUG   [0m root:connection.py:142 [35mASYNC_SEND > {"id": "74dc0d28-3109-4ef1-80c0-68dc5cd0a83b", "method": "App.callFunction", "params": {"functionDeclaration": "function () {\n    wx.onAppRouteDone(function (options) {\n        onAppRouteDone(options)\n    })\n}", "args": []}}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"64f058d8-7472-4a9e-88c5-b15404dc33f4","method":"App.callFunction","params":{"functionDeclaration":"function () {global.minium = {};}","args":[]}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"74dc0d28-3109-4ef1-80c0-68dc5cd0a83b","result":{}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 74dc0d28-3109-4ef1-80c0-68dc5cd0a83b[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"74dc0d28-3109-4ef1-80c0-68dc5cd0a83b","result":{}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 74dc0d28-3109-4ef1-80c0-68dc5cd0a83b[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"64f058d8-7472-4a9e-88c5-b15404dc33f4","result":{}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 64f058d8-7472-4a9e-88c5-b15404dc33f4[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"74dc0d28-3109-4ef1-80c0-68dc5cd0a83b","result":{}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 74dc0d28-3109-4ef1-80c0-68dc5cd0a83b[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"64f058d8-7472-4a9e-88c5-b15404dc33f4","result":{}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 64f058d8-7472-4a9e-88c5-b15404dc33f4[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"74dc0d28-3109-4ef1-80c0-68dc5cd0a83b","result":{}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 74dc0d28-3109-4ef1-80c0-68dc5cd0a83b[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"64f058d8-7472-4a9e-88c5-b15404dc33f4","result":{}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 64f058d8-7472-4a9e-88c5-b15404dc33f4[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"64f058d8-7472-4a9e-88c5-b15404dc33f4","result":{}}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"4a225ae7-2de1-482c-89ab-2f9cb4c07c3c","method":"App.callWxMethod","params":{"method":"getLaunchOptionsSync","args":[]}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"4a225ae7-2de1-482c-89ab-2f9cb4c07c3c","result":{"result":{"path":"pages/home/home","query":{},"scene":1001,"referrerInfo":{}}}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 4a225ae7-2de1-482c-89ab-2f9cb4c07c3c[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"4a225ae7-2de1-482c-89ab-2f9cb4c07c3c","result":{"result":{"path":"pages/home/home","query":{},"scene":1001,"referrerInfo":{}}}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 4a225ae7-2de1-482c-89ab-2f9cb4c07c3c[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"4a225ae7-2de1-482c-89ab-2f9cb4c07c3c","result":{"result":{"path":"pages/home/home","query":{},"scene":1001,"referrerInfo":{}}}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 4a225ae7-2de1-482c-89ab-2f9cb4c07c3c[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"4a225ae7-2de1-482c-89ab-2f9cb4c07c3c","result":{"result":{"path":"pages/home/home","query":{},"scene":1001,"referrerInfo":{}}}}[0m
+[32mINFO    [0m root:app.py:554 [32mReLaunch: /pages/home/home[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"d09cac2c-9b12-4554-bce7-48029a7f6ac0","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/home/home"}]}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"d09cac2c-9b12-4554-bce7-48029a7f6ac0","result":{"result":{"errMsg":"reLaunch:ok"}}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: d09cac2c-9b12-4554-bce7-48029a7f6ac0[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"d09cac2c-9b12-4554-bce7-48029a7f6ac0","result":{"result":{"errMsg":"reLaunch:ok"}}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: d09cac2c-9b12-4554-bce7-48029a7f6ac0[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"d09cac2c-9b12-4554-bce7-48029a7f6ac0","result":{"result":{"errMsg":"reLaunch:ok"}}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: d09cac2c-9b12-4554-bce7-48029a7f6ac0[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"d09cac2c-9b12-4554-bce7-48029a7f6ac0","result":{"result":{"errMsg":"reLaunch:ok"}}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":153,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 153, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[32mINFO    [0m root:log.py:35 [32mrun find
+ args: 
+(<pages.main.Main testMethod=runTest>, '.time', None)
+{}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"8c3c52af-b61f-4dac-b8a5-0854418a97aa","method":"App.getCurrentPage","params":{}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"8c3c52af-b61f-4dac-b8a5-0854418a97aa","result":{"pageId":153,"path":"pages/home/home","query":{}}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 8c3c52af-b61f-4dac-b8a5-0854418a97aa[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"8c3c52af-b61f-4dac-b8a5-0854418a97aa","result":{"pageId":153,"path":"pages/home/home","query":{}}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 8c3c52af-b61f-4dac-b8a5-0854418a97aa[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"8c3c52af-b61f-4dac-b8a5-0854418a97aa","result":{"pageId":153,"path":"pages/home/home","query":{}}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 8c3c52af-b61f-4dac-b8a5-0854418a97aa[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"8c3c52af-b61f-4dac-b8a5-0854418a97aa","result":{"pageId":153,"path":"pages/home/home","query":{}}}[0m
+[32mINFO    [0m root:page.py:237 [32mtry to get elements: .time[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"57dc891d-ea65-4754-b450-108f211b6e0f","method":"Page.getElements","params":{"selector":".time","pageId":153}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"57dc891d-ea65-4754-b450-108f211b6e0f","result":{"elements":[{"elementId":"1706de81-476b-4d73-9031-946896579a78","tagName":"view"}]}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 57dc891d-ea65-4754-b450-108f211b6e0f[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"57dc891d-ea65-4754-b450-108f211b6e0f","result":{"elements":[{"elementId":"1706de81-476b-4d73-9031-946896579a78","tagName":"view"}]}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 57dc891d-ea65-4754-b450-108f211b6e0f[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"57dc891d-ea65-4754-b450-108f211b6e0f","result":{"elements":[{"elementId":"1706de81-476b-4d73-9031-946896579a78","tagName":"view"}]}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 57dc891d-ea65-4754-b450-108f211b6e0f[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"57dc891d-ea65-4754-b450-108f211b6e0f","result":{"elements":[{"elementId":"1706de81-476b-4d73-9031-946896579a78","tagName":"view"}]}}[0m
+[32mINFO    [0m root:page.py:244 [32mfind elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x103568100>][0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"eb950d98-5613-4d0e-98c9-f3f58c78db5c","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"1706de81-476b-4d73-9031-946896579a78","pageId":153}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"eb950d98-5613-4d0e-98c9-f3f58c78db5c","result":{"styles":["auto"]}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: eb950d98-5613-4d0e-98c9-f3f58c78db5c[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"eb950d98-5613-4d0e-98c9-f3f58c78db5c","result":{"styles":["auto"]}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"eb950d98-5613-4d0e-98c9-f3f58c78db5c","result":{"styles":["auto"]}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: eb950d98-5613-4d0e-98c9-f3f58c78db5c[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"1839dbf0-4463-46cf-b6b2-382cdd07a790","method":"Element.tap","params":{"elementId":"1706de81-476b-4d73-9031-946896579a78","pageId":153}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"eb950d98-5613-4d0e-98c9-f3f58c78db5c","result":{"styles":["auto"]}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: eb950d98-5613-4d0e-98c9-f3f58c78db5c[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"1839dbf0-4463-46cf-b6b2-382cdd07a790","result":{}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 1839dbf0-4463-46cf-b6b2-382cdd07a790[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"1839dbf0-4463-46cf-b6b2-382cdd07a790","result":{}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 1839dbf0-4463-46cf-b6b2-382cdd07a790[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"1839dbf0-4463-46cf-b6b2-382cdd07a790","result":{}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"1839dbf0-4463-46cf-b6b2-382cdd07a790","result":{}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 1839dbf0-4463-46cf-b6b2-382cdd07a790[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":154,"path":"pages/select-date/select-date","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 154, 'path': 'pages/select-date/select-date', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[32mINFO    [0m root:log.py:35 [32mrun find
+ args: 
+(<pages.main.Main testMethod=runTest>, '.van-calendar__day.van-calendar__day.van-calendar__day--disabled.van-calendar__day--disabled', {'text_contains': '1', 'max_timeout': 30})
+{}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"32c00e31-6fba-4459-ba8d-85f8eb2dbc35","method":"App.getCurrentPage","params":{}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"32c00e31-6fba-4459-ba8d-85f8eb2dbc35","result":{"pageId":154,"path":"pages/select-date/select-date","query":{}}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 32c00e31-6fba-4459-ba8d-85f8eb2dbc35[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"32c00e31-6fba-4459-ba8d-85f8eb2dbc35","result":{"pageId":154,"path":"pages/select-date/select-date","query":{}}}[0m
+[32mINFO    [0m root:page.py:237 [32mtry to get elements: .van-calendar__day.van-calendar__day.van-calendar__day--disabled.van-calendar__day--disabled[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"32c00e31-6fba-4459-ba8d-85f8eb2dbc35","result":{"pageId":154,"path":"pages/select-date/select-date","query":{}}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 32c00e31-6fba-4459-ba8d-85f8eb2dbc35[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"32c00e31-6fba-4459-ba8d-85f8eb2dbc35","result":{"pageId":154,"path":"pages/select-date/select-date","query":{}}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 32c00e31-6fba-4459-ba8d-85f8eb2dbc35[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"d3ed615b-f95a-445b-a8f9-0828bb241ea2","method":"Page.getElements","params":{"selector":".van-calendar__day.van-calendar__day.van-calendar__day--disabled.van-calendar__day--disabled","pageId":154}}[0m
+[35mDEBUG   [0m root:connection.py:175 [35mRECV < {"id":"d3ed615b-f95a-445b-a8f9-0828bb241ea2","result":{"elements":[{"elementId":"c9cb31ad-4ccf-45f4-ae6f-2d8ce4945e1f","tagName":"view"},{"elementId":"884b30a0-ee10-4132-9349-61dc88c30890","tagName":"view"},{"elementId":"95080c45-b9d6-4599-b96a-e1ca83804c8c","tagName":"view"},{"elementId":"b2cdf598-3929-4c89-9d50-02d0d4be864b","tagName":"view"},{"elementId":"8edc93da-94e4-4f33-ae06-de72aca820b1","tagName":"view"},{"elementId":"6ed07982-fd45-4cfb-bb7d-b2c6e59730ea","tagName":"view"},{"elementId":"7ca20257...[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: d3ed615b-f95a-445b-a8f9-0828bb241ea2[0m
+[35mDEBUG   [0m root:connection.py:175 [35mRECV < {"id":"d3ed615b-f95a-445b-a8f9-0828bb241ea2","result":{"elements":[{"elementId":"c9cb31ad-4ccf-45f4-ae6f-2d8ce4945e1f","tagName":"view"},{"elementId":"884b30a0-ee10-4132-9349-61dc88c30890","tagName":"view"},{"elementId":"95080c45-b9d6-4599-b96a-e1ca83804c8c","tagName":"view"},{"elementId":"b2cdf598-3929-4c89-9d50-02d0d4be864b","tagName":"view"},{"elementId":"8edc93da-94e4-4f33-ae06-de72aca820b1","tagName":"view"},{"elementId":"6ed07982-fd45-4cfb-bb7d-b2c6e59730ea","tagName":"view"},{"elementId":"7ca20257...[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: d3ed615b-f95a-445b-a8f9-0828bb241ea2[0m
+[35mDEBUG   [0m root:connection.py:175 [35mRECV < {"id":"d3ed615b-f95a-445b-a8f9-0828bb241ea2","result":{"elements":[{"elementId":"c9cb31ad-4ccf-45f4-ae6f-2d8ce4945e1f","tagName":"view"},{"elementId":"884b30a0-ee10-4132-9349-61dc88c30890","tagName":"view"},{"elementId":"95080c45-b9d6-4599-b96a-e1ca83804c8c","tagName":"view"},{"elementId":"b2cdf598-3929-4c89-9d50-02d0d4be864b","tagName":"view"},{"elementId":"8edc93da-94e4-4f33-ae06-de72aca820b1","tagName":"view"},{"elementId":"6ed07982-fd45-4cfb-bb7d-b2c6e59730ea","tagName":"view"},{"elementId":"7ca20257...[0m
+[32mINFO    [0m root:page.py:244 [32mfind elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x1035a05b0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a0310>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a06a0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a0640>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a0970>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a0eb0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a0be0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a0220>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a04f0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a07f0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a0a90>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a0e50>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a0910>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a0b20>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a0f70>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a08e0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a0520>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a0d00>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a0ee0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a0dc0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a03d0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a07c0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a0c10>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a0070>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a0b50>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a0e80>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a0ca0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a0a30>, <minium.miniprogram.base_driver.element.BaseElement object at 0x1035a0e20>][0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"08ae1b94-63c6-45e7-8303-0873db9da9db","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"c9cb31ad-4ccf-45f4-ae6f-2d8ce4945e1f","pageId":154}}[0m
+[35mDEBUG   [0m root:connection.py:175 [35mRECV < {"id":"d3ed615b-f95a-445b-a8f9-0828bb241ea2","result":{"elements":[{"elementId":"c9cb31ad-4ccf-45f4-ae6f-2d8ce4945e1f","tagName":"view"},{"elementId":"884b30a0-ee10-4132-9349-61dc88c30890","tagName":"view"},{"elementId":"95080c45-b9d6-4599-b96a-e1ca83804c8c","tagName":"view"},{"elementId":"b2cdf598-3929-4c89-9d50-02d0d4be864b","tagName":"view"},{"elementId":"8edc93da-94e4-4f33-ae06-de72aca820b1","tagName":"view"},{"elementId":"6ed07982-fd45-4cfb-bb7d-b2c6e59730ea","tagName":"view"},{"elementId":"7ca20257...[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: d3ed615b-f95a-445b-a8f9-0828bb241ea2[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"08ae1b94-63c6-45e7-8303-0873db9da9db","result":{"properties":["1"]}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 08ae1b94-63c6-45e7-8303-0873db9da9db[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"08ae1b94-63c6-45e7-8303-0873db9da9db","result":{"properties":["1"]}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"08ae1b94-63c6-45e7-8303-0873db9da9db","result":{"properties":["1"]}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 08ae1b94-63c6-45e7-8303-0873db9da9db[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"08ae1b94-63c6-45e7-8303-0873db9da9db","result":{"properties":["1"]}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 08ae1b94-63c6-45e7-8303-0873db9da9db[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"1cf69ca8-920a-4e60-babb-5190a4e4d135","method":"Element.getAttributes","params":{"names":["class"],"elementId":"c9cb31ad-4ccf-45f4-ae6f-2d8ce4945e1f","pageId":154}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"1cf69ca8-920a-4e60-babb-5190a4e4d135","result":{"attributes":["van-calendar__day month-index--van-calendar__day van-calendar__day--disabled month-index--van-calendar__day--disabled"]}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 1cf69ca8-920a-4e60-babb-5190a4e4d135[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"1cf69ca8-920a-4e60-babb-5190a4e4d135","result":{"attributes":["van-calendar__day month-index--van-calendar__day van-calendar__day--disabled month-index--van-calendar__day--disabled"]}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 1cf69ca8-920a-4e60-babb-5190a4e4d135[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"1cf69ca8-920a-4e60-babb-5190a4e4d135","result":{"attributes":["van-calendar__day month-index--van-calendar__day van-calendar__day--disabled month-index--van-calendar__day--disabled"]}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: 1cf69ca8-920a-4e60-babb-5190a4e4d135[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"1cf69ca8-920a-4e60-babb-5190a4e4d135","result":{"attributes":["van-calendar__day month-index--van-calendar__day van-calendar__day--disabled month-index--van-calendar__day--disabled"]}}[0m
+[32mINFO    [0m root:app.py:554 [32mReLaunch: /pages/home/home[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"f7daa66e-2961-4598-8422-7b7403daffe1","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/home/home"}]}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"f7daa66e-2961-4598-8422-7b7403daffe1","result":{"result":{"errMsg":"reLaunch:ok"}}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: f7daa66e-2961-4598-8422-7b7403daffe1[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"f7daa66e-2961-4598-8422-7b7403daffe1","result":{"result":{"errMsg":"reLaunch:ok"}}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: f7daa66e-2961-4598-8422-7b7403daffe1[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"f7daa66e-2961-4598-8422-7b7403daffe1","result":{"result":{"errMsg":"reLaunch:ok"}}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: f7daa66e-2961-4598-8422-7b7403daffe1[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"f7daa66e-2961-4598-8422-7b7403daffe1","result":{"result":{"errMsg":"reLaunch:ok"}}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":155,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 155, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m

@@ -18,9 +18,16 @@ class TestDayOrder:
 
     @allure.title("日租房当日预定流程测试")
     @pytest.mark.parametrize(("name", "phone", "room_type", "except_result"),
-                             get_data('test_day_order', '../data/test_day_order.yaml'))
+                             get_data('test_day_order', '../data/pro_data/test_day_order.yaml'))
     def test_day_order(self, name, phone, room_type, except_result):
-        """日租房预定当日酒店流程测试"""
+        """
+        日租房预定当日酒店流程测试
+        :param name: 入住人
+        :param phone: 电话号码
+        :param room_type: 房型名称
+        :param except_result: 期望结果集
+        :return: None
+        """
         with allure.step(f"{room_type}-日租房下单流程"):
             hotel_scheduled = self.main.goto_day_hotel_list().goto_hotel_detail().goto_hotel_scheduled(
                 room_type).save_order(name, phone)
@@ -52,10 +59,15 @@ class TestDayOrder:
 
     @allure.title("日租房预定流程（带游戏机）测试")
     @pytest.mark.parametrize(("name", "phone", "room_type", "except_result"),
-                             get_data('test_switch_day_order', '../data/test_day_order.yaml'))
+                             get_data('test_switch_day_order', '../data/pro_data/test_day_order.yaml'))
     def test_switch_day_order(self, name, phone, room_type, except_result):
         """
         租赁游戏机订单
+        :param name: 入住人
+        :param phone: 电话号码
+        :param room_type: 房型名称
+        :param except_result: 期望结果集
+        :return: None
         """
         with allure.step("日租房下单流程"):
             hotel_scheduled = self.main.goto_day_hotel_list().goto_hotel_detail().goto_hotel_scheduled(
@@ -79,15 +91,24 @@ class TestDayOrder:
             room_user = except_result.get("expect_result")[4].get("入住人")
             assert paid_result == f"总价：{totel_paid}", f'当前返回的实际值为: {paid_result}'
             assert username_result == f"入住人：{room_user}", f'当前返回的实际值为:{username_result}'
-            assert switch_result == f"(含游戏机租金120元)", f'当前返回的实际值为:{switch_result}'
+            assert switch_result == f"(含游戏机租金40元)", f'当前返回的实际值为:{switch_result}'
         with allure.step("取消订单，释放房态"):
             self.order_detail.cancel_order()
 
     @allure.title("日租房房态已满测试")
+    @pytest.mark.skip
     @pytest.mark.parametrize(("name", "phone", "room_type", "room_code", "except_result"),
-                             get_data('test_day_nh_order', '../data/test_day_order.yaml'))
+                             get_data('test_day_nh_order', '../data/pro_data/test_day_order.yaml'))
     def test_day_nh_order(self, name, phone, room_type, room_code, except_result):
-        """日租房预定当日房态已满测试"""
+        """
+        日租房预定当日房态已满测试
+        :param name: 入住人
+        :param phone: 电话号码
+        :param room_type: 房型名称
+        :param room_code: 房型编码
+        :param except_result: 期望结果集
+        :return: None
+        """
         with allure.step(f"{room_type}-日租房下单流程"):
             hotel_scheduled = self.main.goto_day_hotel_list().goto_hotel_detail().goto_hotel_scheduled(
                 room_type).save_order(name, phone)
@@ -116,16 +137,32 @@ class TestDayOrder:
 
     @allure.title("日租房选择前一天预定测试")
     @pytest.mark.parametrize(("yesterday_date", "except_result"),
-                             get_data('test_yesterday_order', '../data/test_day_order.yaml'))
+                             get_data('test_yesterday_order', '../data/pro_data/test_day_order.yaml'))
     def test_yesterday_order(self, yesterday_date, except_result):
+        """
+        测试前一天是否可选
+        :param yesterday_date: 昨天日期
+        :param except_result: 期望结果集
+        :return: None
+        """
         with allure.step(f"{yesterday_date[0]} 日：日租房下单流程"):
             result = self.main.get_yesterday_date(yesterday_date[0])
         assert except_result == result[0]
 
     @allure.title("日租房远期多天预定流程测试")
     @pytest.mark.parametrize(("name", "phone", "room_type", "start_date", "end_date", "except_result"),
-                             get_data('test_forward_day_order', '../data/test_day_order.yaml'))
+                             get_data('test_forward_day_order', '../data/pro_data/test_day_order.yaml'))
     def test_forward_day_order(self, name, phone, room_type, start_date, end_date, except_result):
+        """
+        远期多天预定测试
+        :param name: 入住人
+        :param phone: 电话号码
+        :param room_type: 房型名称
+        :param start_date: 开始日期
+        :param end_date: 结束日期
+        :param except_result: 期望结果集
+        :return: None
+        """
         with allure.step(f"{start_date}-{end_date} 日：{room_type}-日租房下单流程"):
             hotel_scheduled = self.main.set_day_date(start_date,
                                                      end_date).goto_day_hotel_list().goto_hotel_detail().goto_hotel_scheduled(
@@ -153,8 +190,17 @@ class TestDayOrder:
 
     @allure.title("日租房远期多天预定游戏机选择测试")
     @pytest.mark.parametrize(("name", "phone", "room_type", "start_date", "end_date"),
-                             get_data('test_forward_day_switch_order', '../data/test_day_order.yaml'))
+                             get_data('test_forward_day_switch_order', '../data/pro_data/test_day_order.yaml'))
     def test_forward_day_switch_order(self, name, phone, room_type, start_date, end_date):
+        """
+        远期多天预定游戏机
+        :param name: 入住人
+        :param phone: 电话号码
+        :param room_type: 房型名称
+        :param start_date: 开始日期
+        :param end_date: 结束日期
+        :return: None
+        """
         with allure.step(f"{start_date}-{end_date} 日：{room_type}-日租房下单流程"):
             hotel_scheduled = self.main.set_day_date(start_date,
                                                      end_date).goto_day_hotel_list().goto_hotel_detail().goto_hotel_scheduled(
@@ -173,3 +219,4 @@ class TestDayOrder:
 
     def teardown(self):
         self.routing.goto_main()
+        time.sleep(1)

@@ -1,0 +1,244 @@
+[32mINFO    [0m root:wx_minium.py:67 {}
+[32mINFO    [0m root:wx_minium.py:111 [32mStarting dev tool and launch MiniProgram project ...[0m
+[33mWARNING [0m root:wx_minium.py:163 [33mCan not find project_path in config, that means you must open dev tool by automation way first[0m
+[32mINFO    [0m root:wx_minium.py:198 [32mTrying to connect Dev tool ...[0m
+[32mINFO    [0m root:connection.py:106 [32mconnect to WebChatTools successfully[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"b13c21ae-a311-4968-a0dd-5b041b345f12","method":"App.addBinding","params":{"name":"onAppRouteDone"}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"b13c21ae-a311-4968-a0dd-5b041b345f12","result":{}}[0m
+[35mDEBUG   [0m root:connection.py:142 [35mASYNC_SEND > {"id": "e2023d1a-1bba-411f-b2b9-9c6371acd898", "method": "App.callFunction", "params": {"functionDeclaration": "function () {\n    wx.onAppRouteDone(function (options) {\n        onAppRouteDone(options)\n    })\n}", "args": []}}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"53f7cb6a-a52c-4dc5-a3ee-ed171d993e79","method":"App.callFunction","params":{"functionDeclaration":"function () {global.minium = {};}","args":[]}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"e2023d1a-1bba-411f-b2b9-9c6371acd898","result":{}}[0m
+[33mWARNING [0m root:connection.py:188 [33mreceived async msg: e2023d1a-1bba-411f-b2b9-9c6371acd898[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"53f7cb6a-a52c-4dc5-a3ee-ed171d993e79","result":{}}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"39e1b9f4-04d1-44a0-bf25-539bd19b5c87","method":"App.callWxMethod","params":{"method":"getAccountInfoSync","args":[]}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"39e1b9f4-04d1-44a0-bf25-539bd19b5c87","result":{"result":{"miniProgram":{"appId":"wxdebc8f5b471c7556","envVersion":"develop","version":""}}}}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"1d7ca25a-850d-40fb-a198-292dea8b7f86","method":"App.callWxMethod","params":{"method":"getAccountInfoSync","args":[]}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"1d7ca25a-850d-40fb-a198-292dea8b7f86","result":{"result":{"miniProgram":{"appId":"wxdebc8f5b471c7556","envVersion":"develop","version":""}}}}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"fd2e88a3-818e-4c7b-aeee-ebec0b95a0fd","method":"App.callWxMethod","params":{"method":"getLaunchOptionsSync","args":[]}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"fd2e88a3-818e-4c7b-aeee-ebec0b95a0fd","result":{"result":{"path":"pages/home/home","query":{},"scene":1001,"referrerInfo":{}}}}[0m
+[32mINFO    [0m root:app.py:554 [32mReLaunch: /pages/home/home[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"bba71c73-78c5-4aaf-888b-775390808215","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/home/home"}]}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"bba71c73-78c5-4aaf-888b-775390808215","result":{"result":{"errMsg":"reLaunch:ok"}}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":21,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 21, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":21,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 21, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":21,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 21, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[32mINFO    [0m root:log.py:35 [32mrun find
+ args: 
+(<pages.main.Main testMethod=runTest>, 'button', {'inner_text': '搜索酒店', 'max_timeout': 30})
+{}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"18309c5c-8f27-49a9-a842-56216f3e07ba","method":"App.getCurrentPage","params":{}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"18309c5c-8f27-49a9-a842-56216f3e07ba","result":{"pageId":21,"path":"pages/home/home","query":{}}}[0m
+[32mINFO    [0m root:page.py:237 [32mtry to get elements: button[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"c95b7650-109b-4a36-a65e-46933b274ba8","method":"Page.getElements","params":{"selector":"button","pageId":21}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"c95b7650-109b-4a36-a65e-46933b274ba8","result":{"elements":[{"elementId":"18b29bfe-7742-4bfa-aa27-922f96ba6722","tagName":"button"},{"elementId":"8b6ed5d0-1f22-4979-9faa-37cd2db99ab0","tagName":"button"},{"elementId":"61922f79-f307-4180-87f8-3f8427d75eb2","tagName":"button"},{"elementId":"8ad04e52-4003-440a-878c-c3ad0ffa10ed","tagName":"button"},{"elementId":"91e56c6e-0838-4021-bf61-47161da0a20a","tagName":"button"}]}}[0m
+[32mINFO    [0m root:page.py:244 [32mfind elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x10c348dc0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x10c348f70>, <minium.miniprogram.base_driver.element.BaseElement object at 0x10c348cd0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x10c348f40>, <minium.miniprogram.base_driver.element.BaseElement object at 0x10c348e80>][0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"1dc10e39-aec8-4d13-ae62-cc7f0a1a8a04","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"18b29bfe-7742-4bfa-aa27-922f96ba6722","pageId":21}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"1dc10e39-aec8-4d13-ae62-cc7f0a1a8a04","result":{"properties":["搜索酒店"]}}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"0a187809-ff47-481d-9fea-b2f8820d1e6e","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"18b29bfe-7742-4bfa-aa27-922f96ba6722","pageId":21}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"0a187809-ff47-481d-9fea-b2f8820d1e6e","result":{"styles":["auto"]}}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"4fa0a325-437a-4690-8b48-75df5fd5901e","method":"Element.tap","params":{"elementId":"18b29bfe-7742-4bfa-aa27-922f96ba6722","pageId":21}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"4fa0a325-437a-4690-8b48-75df5fd5901e","result":{}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":22,"path":"pages/hotel/list/list","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 22, 'path': 'pages/hotel/list/list', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":22,"path":"pages/hotel/list/list","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 22, 'path': 'pages/hotel/list/list', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":22,"path":"pages/hotel/list/list","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 22, 'path': 'pages/hotel/list/list', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[32mINFO    [0m root:log.py:35 [32mrun find
+ args: 
+(<pages.hotellist.HotelList testMethod=runTest>, '.img', {'max_timeout': 30})
+{}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"9bd16ae1-702f-4c5c-be67-8a61b2f3e1ca","method":"App.getCurrentPage","params":{}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"9bd16ae1-702f-4c5c-be67-8a61b2f3e1ca","result":{"pageId":22,"path":"pages/hotel/list/list","query":{}}}[0m
+[32mINFO    [0m root:page.py:237 [32mtry to get elements: .img[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"c8952477-47db-4bca-9eed-99c0dda680c4","method":"Page.getElements","params":{"selector":".img","pageId":22}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"c8952477-47db-4bca-9eed-99c0dda680c4","result":{"elements":[{"elementId":"db6053fb-7ac3-4ac2-9b45-5bc1fa0ffee5","tagName":"view"}]}}[0m
+[32mINFO    [0m root:page.py:244 [32mfind elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x10c348e50>][0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"2a698d9c-b089-4694-a978-030646997d68","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"db6053fb-7ac3-4ac2-9b45-5bc1fa0ffee5","pageId":22}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"2a698d9c-b089-4694-a978-030646997d68","result":{"styles":["auto"]}}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"17ebc3b8-4d8a-4609-aed5-21c22f8faef4","method":"Element.tap","params":{"elementId":"db6053fb-7ac3-4ac2-9b45-5bc1fa0ffee5","pageId":22}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"17ebc3b8-4d8a-4609-aed5-21c22f8faef4","result":{}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":23,"path":"pages/detail/detail","query":{"chainID":"440135","lowestRate":"138"},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 23, 'path': 'pages/detail/detail', 'query': {'chainID': '440135', 'lowestRate': '138'}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":23,"path":"pages/detail/detail","query":{"chainID":"440135","lowestRate":"138"},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 23, 'path': 'pages/detail/detail', 'query': {'chainID': '440135', 'lowestRate': '138'}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":23,"path":"pages/detail/detail","query":{"chainID":"440135","lowestRate":"138"},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 23, 'path': 'pages/detail/detail', 'query': {'chainID': '440135', 'lowestRate': '138'}, 'openType': 'navigateTo'}]}[0m
+[32mINFO    [0m root:log.py:35 [32mrun find
+ args: 
+(<pages.hoteldetail.HotelDetail testMethod=runTest>, "view[class='title']", {'inner_text': '影院大床立方', 'max_timeout': 30})
+{}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"6639e7a2-abd3-4c80-b910-41c8549aed92","method":"App.getCurrentPage","params":{}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"6639e7a2-abd3-4c80-b910-41c8549aed92","result":{"pageId":23,"path":"pages/detail/detail","query":{"chainID":"440135","lowestRate":"138"}}}[0m
+[32mINFO    [0m root:page.py:237 [32mtry to get elements: view[class='title'][0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"587e700f-87ab-4ae9-bc1c-e26ff5ead65c","method":"Page.getElements","params":{"selector":"view[class='title']","pageId":23}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"587e700f-87ab-4ae9-bc1c-e26ff5ead65c","result":{"elements":[{"elementId":"b3a79c2c-19dc-4f55-bb65-0e5201cea8d2","tagName":"view"},{"elementId":"b687c564-a6e7-4485-880c-049a91bde10b","tagName":"view"},{"elementId":"d2f454a3-140b-40c3-8f44-63a93e8dac74","tagName":"view"},{"elementId":"96c2b0fe-42d9-4531-befe-0dc1285b0b5c","tagName":"view"},{"elementId":"cb28e304-6b10-4e3a-bc87-454625b7b3ee","tagName":"view"},{"elementId":"98472b4c-e4f0-4e52-a66a-cd7838e5d624","tagName":"view"}]}}[0m
+[32mINFO    [0m root:page.py:244 [32mfind elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x10c2f4e50>, <minium.miniprogram.base_driver.element.BaseElement object at 0x10c2f4f70>, <minium.miniprogram.base_driver.element.BaseElement object at 0x10c2f4ac0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x10c2f4640>, <minium.miniprogram.base_driver.element.BaseElement object at 0x10c2f4820>, <minium.miniprogram.base_driver.element.BaseElement object at 0x10c2f44c0>][0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"ba91abc4-1cca-48cf-b1a4-ae58aeb5fc4b","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"b3a79c2c-19dc-4f55-bb65-0e5201cea8d2","pageId":23}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"ba91abc4-1cca-48cf-b1a4-ae58aeb5fc4b","result":{"properties":["影院双床立方"]}}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"c71d774a-9516-41e2-aecb-40ab94818f82","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"b687c564-a6e7-4485-880c-049a91bde10b","pageId":23}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"c71d774a-9516-41e2-aecb-40ab94818f82","result":{"properties":["影院大床立方"]}}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"67908257-433e-4d8e-9232-3a56d9e12e3a","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"b687c564-a6e7-4485-880c-049a91bde10b","pageId":23}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"67908257-433e-4d8e-9232-3a56d9e12e3a","result":{"styles":["auto"]}}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"1ff03f61-fae4-4236-80e9-bc43b651c326","method":"Element.tap","params":{"elementId":"b687c564-a6e7-4485-880c-049a91bde10b","pageId":23}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"1ff03f61-fae4-4236-80e9-bc43b651c326","result":{}}[0m
+[32mINFO    [0m root:log.py:35 [32mrun find
+ args: 
+(<pages.hoteldetail.HotelDetail testMethod=runTest>, '.btn-action', {'inner_text': '立即预订', 'max_timeout': 30})
+{}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"21b1ff11-e777-4af0-ade0-6cdea0bff74a","method":"App.getCurrentPage","params":{}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"21b1ff11-e777-4af0-ade0-6cdea0bff74a","result":{"pageId":23,"path":"pages/detail/detail","query":{"chainID":"440135","lowestRate":"138"}}}[0m
+[32mINFO    [0m root:page.py:237 [32mtry to get elements: .btn-action[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"6b67f758-229a-4b88-842c-98b975e60235","method":"Page.getElements","params":{"selector":".btn-action","pageId":23}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"6b67f758-229a-4b88-842c-98b975e60235","result":{"elements":[{"elementId":"24bbf7b8-df01-496c-9ae9-6f0bf1b05bcf","tagName":"view"}]}}[0m
+[32mINFO    [0m root:page.py:244 [32mfind elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x10c2f42e0>][0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"267483b3-9fa9-4789-895b-3910cc71ee3a","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"24bbf7b8-df01-496c-9ae9-6f0bf1b05bcf","pageId":23}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"267483b3-9fa9-4789-895b-3910cc71ee3a","result":{"properties":["立即预订"]}}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"b958c128-4b28-4563-94b4-76d52136bdb7","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"24bbf7b8-df01-496c-9ae9-6f0bf1b05bcf","pageId":23}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"b958c128-4b28-4563-94b4-76d52136bdb7","result":{"styles":["auto"]}}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"aedaeb69-c183-4e6e-abcb-e95165f80369","method":"Element.tap","params":{"elementId":"24bbf7b8-df01-496c-9ae9-6f0bf1b05bcf","pageId":23}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"aedaeb69-c183-4e6e-abcb-e95165f80369","result":{}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":24,"path":"pages/booking/booking","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 24, 'path': 'pages/booking/booking', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":24,"path":"pages/booking/booking","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 24, 'path': 'pages/booking/booking', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":24,"path":"pages/booking/booking","query":{},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 24, 'path': 'pages/booking/booking', 'query': {}, 'openType': 'navigateTo'}]}[0m
+[32mINFO    [0m root:log.py:35 [32mrun find
+ args: 
+(<pages.hotelscheduled.HotelScheduled testMethod=runTest>, "input[placeholder='请输入住人姓名']", {'max_timeout': 30})
+{}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"d745eed3-3521-476c-8d95-f4b9b358b96e","method":"App.getCurrentPage","params":{}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"d745eed3-3521-476c-8d95-f4b9b358b96e","result":{"pageId":24,"path":"pages/booking/booking","query":{}}}[0m
+[32mINFO    [0m root:page.py:237 [32mtry to get elements: input[placeholder='请输入住人姓名'][0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"5a9eae9a-5c44-4d48-baca-965a81603cc6","method":"Page.getElements","params":{"selector":"input[placeholder='\u8bf7\u8f93\u5165\u4f4f\u4eba\u59d3\u540d']","pageId":24}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"5a9eae9a-5c44-4d48-baca-965a81603cc6","result":{"elements":[{"elementId":"463c717b-0a80-46e5-b85f-01226b7cc44a","tagName":"input"}]}}[0m
+[32mINFO    [0m root:page.py:244 [32mfind elements success: [<minium.miniprogram.base_driver.element.FormElement object at 0x10c348460>][0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"1ef77009-404f-4641-9635-150f28659206","method":"Element.callFunction","params":{"functionName":"input.input","args":["\u674e\u798f\u5e86"],"elementId":"463c717b-0a80-46e5-b85f-01226b7cc44a","pageId":24}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"1ef77009-404f-4641-9635-150f28659206","result":{}}[0m
+[32mINFO    [0m root:log.py:35 [32mrun find
+ args: 
+(<pages.hotelscheduled.HotelScheduled testMethod=runTest>, "input[placeholder='请输入住人手机号']", {'max_timeout': 30})
+{}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"690c9e35-615b-4b31-aba0-9f5833df9c45","method":"App.getCurrentPage","params":{}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"690c9e35-615b-4b31-aba0-9f5833df9c45","result":{"pageId":24,"path":"pages/booking/booking","query":{}}}[0m
+[32mINFO    [0m root:page.py:237 [32mtry to get elements: input[placeholder='请输入住人手机号'][0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"8ef9c17c-4cf3-4167-b63a-05a0ae122252","method":"Page.getElements","params":{"selector":"input[placeholder='\u8bf7\u8f93\u5165\u4f4f\u4eba\u624b\u673a\u53f7']","pageId":24}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"8ef9c17c-4cf3-4167-b63a-05a0ae122252","result":{"elements":[{"elementId":"744ea5cd-e16f-442e-af40-17c056ccdaf6","tagName":"input"}]}}[0m
+[32mINFO    [0m root:page.py:244 [32mfind elements success: [<minium.miniprogram.base_driver.element.FormElement object at 0x10c348490>][0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"9336720e-f32f-41b5-b03a-18800a27dda8","method":"Element.callFunction","params":{"functionName":"input.input","args":["18516126760"],"elementId":"744ea5cd-e16f-442e-af40-17c056ccdaf6","pageId":24}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"9336720e-f32f-41b5-b03a-18800a27dda8","result":{}}[0m
+[32mINFO    [0m root:log.py:35 [32mrun find
+ args: 
+(<pages.hotelscheduled.HotelScheduled testMethod=runTest>, '.mr10.mr10.fc-858B9C.fc-858B9C', {'inner_text': '明细', 'max_timeout': 30})
+{}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"b0bb7b13-d16f-4004-b5a4-f6431ad899b9","method":"App.getCurrentPage","params":{}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"b0bb7b13-d16f-4004-b5a4-f6431ad899b9","result":{"pageId":24,"path":"pages/booking/booking","query":{}}}[0m
+[32mINFO    [0m root:page.py:237 [32mtry to get elements: .mr10.mr10.fc-858B9C.fc-858B9C[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"57445ce4-9f5a-468b-b038-2fa7b85bbeca","method":"Page.getElements","params":{"selector":".mr10.mr10.fc-858B9C.fc-858B9C","pageId":24}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"57445ce4-9f5a-468b-b038-2fa7b85bbeca","result":{"elements":[{"elementId":"f48d7adf-9b6e-4cd5-a98d-5ceeea76ec12","tagName":"text"}]}}[0m
+[32mINFO    [0m root:page.py:244 [32mfind elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x10c33f1c0>][0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"df22402f-5ec6-46fa-9a91-cdea28523e21","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"f48d7adf-9b6e-4cd5-a98d-5ceeea76ec12","pageId":24}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"df22402f-5ec6-46fa-9a91-cdea28523e21","result":{"properties":["明细"]}}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"1b85c279-36eb-4997-957f-904844ca7122","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"f48d7adf-9b6e-4cd5-a98d-5ceeea76ec12","pageId":24}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"1b85c279-36eb-4997-957f-904844ca7122","result":{"styles":["auto"]}}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"17a12867-30d8-4ce9-9b5c-ef91d16e5847","method":"Element.tap","params":{"elementId":"f48d7adf-9b6e-4cd5-a98d-5ceeea76ec12","pageId":24}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"17a12867-30d8-4ce9-9b5c-ef91d16e5847","result":{}}[0m
+[32mINFO    [0m root:log.py:35 [32mrun find
+ args: 
+(<pages.hotelscheduled.HotelScheduled testMethod=runTest>, '.item.item.last-item.last-item.flex.flex.h-end.h-end', {'max_timeout': 30})
+{}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"6af2bc98-4889-4b59-beb8-6fa64453a585","method":"App.getCurrentPage","params":{}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"6af2bc98-4889-4b59-beb8-6fa64453a585","result":{"pageId":24,"path":"pages/booking/booking","query":{}}}[0m
+[32mINFO    [0m root:page.py:237 [32mtry to get elements: .item.item.last-item.last-item.flex.flex.h-end.h-end[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"acea4a68-1354-406e-976c-3d01bddb6dda","method":"Page.getElements","params":{"selector":".item.item.last-item.last-item.flex.flex.h-end.h-end","pageId":24}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"acea4a68-1354-406e-976c-3d01bddb6dda","result":{"elements":[{"elementId":"9818b893-a84e-499d-879d-2f9a3cfbc627","tagName":"view"}]}}[0m
+[32mINFO    [0m root:page.py:244 [32mfind elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x10c33f790>][0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"09a84ffd-853b-4f55-bf46-c88fcebbb362","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"9818b893-a84e-499d-879d-2f9a3cfbc627","pageId":24}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"09a84ffd-853b-4f55-bf46-c88fcebbb362","result":{"properties":["房费总额:\n¥148.00\n实付金额:\n¥148.00"]}}[0m
+[32mINFO    [0m root:log.py:35 [32mrun find
+ args: 
+(<pages.hotelscheduled.HotelScheduled testMethod=runTest>, '.pay-now-btn.pay-now-btn', {'inner_text': '去支付', 'max_timeout': 30})
+{}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"7ef57937-f282-40b0-99d6-704fafee5133","method":"App.getCurrentPage","params":{}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"7ef57937-f282-40b0-99d6-704fafee5133","result":{"pageId":24,"path":"pages/booking/booking","query":{}}}[0m
+[32mINFO    [0m root:page.py:237 [32mtry to get elements: .pay-now-btn.pay-now-btn[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"4e9394a7-b273-452f-bdc8-7806e57d140f","method":"Page.getElements","params":{"selector":".pay-now-btn.pay-now-btn","pageId":24}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"4e9394a7-b273-452f-bdc8-7806e57d140f","result":{"elements":[{"elementId":"44096ab9-82f2-42d3-97c7-f9d2b2d20015","tagName":"button"}]}}[0m
+[32mINFO    [0m root:page.py:244 [32mfind elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x10c3323a0>][0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"026ac371-9868-404e-8f6e-4f9c3bda44f2","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"44096ab9-82f2-42d3-97c7-f9d2b2d20015","pageId":24}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"026ac371-9868-404e-8f6e-4f9c3bda44f2","result":{"properties":["去支付"]}}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"084d58ea-8d8d-4e74-b47b-ac1e22b598c0","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"44096ab9-82f2-42d3-97c7-f9d2b2d20015","pageId":24}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"084d58ea-8d8d-4e74-b47b-ac1e22b598c0","result":{"styles":["auto"]}}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"fdf4ad64-638a-4e71-b8fe-0af8271d51b9","method":"Element.tap","params":{"elementId":"44096ab9-82f2-42d3-97c7-f9d2b2d20015","pageId":24}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"fdf4ad64-638a-4e71-b8fe-0af8271d51b9","result":{}}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"7f820a96-29dd-4281-9b8d-880c193565f2","method":"App.mockWxMethod","params":{"method":"requestPayment","result":{"errMsg":"requestPayment:ok"}}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"7f820a96-29dd-4281-9b8d-880c193565f2","result":{}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":25,"path":"pages/pay/success/success","query":{"hotelId":"440135","folioId":"4700"},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 25, 'path': 'pages/pay/success/success', 'query': {'hotelId': '440135', 'folioId': '4700'}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":25,"path":"pages/pay/success/success","query":{"hotelId":"440135","folioId":"4700"},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 25, 'path': 'pages/pay/success/success', 'query': {'hotelId': '440135', 'folioId': '4700'}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":25,"path":"pages/pay/success/success","query":{"hotelId":"440135","folioId":"4700"},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 25, 'path': 'pages/pay/success/success', 'query': {'hotelId': '440135', 'folioId': '4700'}, 'openType': 'reLaunch'}]}[0m
+[32mINFO    [0m root:log.py:35 [32mrun find
+ args: 
+(<pages.paysuccess.PaySuccess testMethod=runTest>, 'button', {'text_contains': '查看订单', 'max_timeout': 30})
+{}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"c8e482cd-ea03-4422-9e93-04ff7fd078c9","method":"App.getCurrentPage","params":{}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"c8e482cd-ea03-4422-9e93-04ff7fd078c9","result":{"pageId":25,"path":"pages/pay/success/success","query":{"hotelId":"440135","folioId":"4700"}}}[0m
+[32mINFO    [0m root:page.py:237 [32mtry to get elements: button[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"b70d6fdf-5623-4bfe-af83-26d09dd5925c","method":"Page.getElements","params":{"selector":"button","pageId":25}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"b70d6fdf-5623-4bfe-af83-26d09dd5925c","result":{"elements":[{"elementId":"33fedb21-a92d-45a8-a0d1-721100b693cb","tagName":"button"}]}}[0m
+[32mINFO    [0m root:page.py:244 [32mfind elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x10c332760>][0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"9d911c3a-155d-4d4a-86e5-1003e6a38f3d","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"33fedb21-a92d-45a8-a0d1-721100b693cb","pageId":25}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"9d911c3a-155d-4d4a-86e5-1003e6a38f3d","result":{"properties":["查看订单"]}}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"d898c6c0-1fcc-4b5c-a5fd-5a7ab8d99a33","method":"Element.getStyles","params":{"names":["pointer-events"],"elementId":"33fedb21-a92d-45a8-a0d1-721100b693cb","pageId":25}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"d898c6c0-1fcc-4b5c-a5fd-5a7ab8d99a33","result":{"styles":["auto"]}}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"90d1bf5d-499e-4598-8de3-a8fa5df24e4e","method":"Element.tap","params":{"elementId":"33fedb21-a92d-45a8-a0d1-721100b693cb","pageId":25}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"90d1bf5d-499e-4598-8de3-a8fa5df24e4e","result":{}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":26,"path":"pages/order/detail/detail","query":{"hotelid":"440135","folioid":"4700"},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 26, 'path': 'pages/order/detail/detail', 'query': {'hotelid': '440135', 'folioid': '4700'}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":26,"path":"pages/order/detail/detail","query":{"hotelid":"440135","folioid":"4700"},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 26, 'path': 'pages/order/detail/detail', 'query': {'hotelid': '440135', 'folioid': '4700'}, 'openType': 'navigateTo'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":26,"path":"pages/order/detail/detail","query":{"hotelid":"440135","folioid":"4700"},"openType":"navigateTo"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 26, 'path': 'pages/order/detail/detail', 'query': {'hotelid': '440135', 'folioid': '4700'}, 'openType': 'navigateTo'}]}[0m
+[32mINFO    [0m root:log.py:35 [32mrun find
+ args: 
+(<pages.orderdetail.OrderDetail testMethod=runTest>, '.fc-111A34.fs-26', {'max_timeout': 30})
+{}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"9fb6df20-20b3-4401-bae7-b949cbe98af7","method":"App.getCurrentPage","params":{}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"9fb6df20-20b3-4401-bae7-b949cbe98af7","result":{"pageId":26,"path":"pages/order/detail/detail","query":{"hotelid":"440135","folioid":"4700"}}}[0m
+[32mINFO    [0m root:page.py:237 [32mtry to get elements: .fc-111A34.fs-26[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"5ca1608e-a057-49f0-80f4-3dc7ef0076d2","method":"Page.getElements","params":{"selector":".fc-111A34.fs-26","pageId":26}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"5ca1608e-a057-49f0-80f4-3dc7ef0076d2","result":{"elements":[{"elementId":"383ebd69-f629-4c02-9356-aa65e7e5a0df","tagName":"view"},{"elementId":"dd7c307f-d890-408c-91d6-55567d604019","tagName":"view"}]}}[0m
+[32mINFO    [0m root:page.py:244 [32mfind elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x10c355cd0>, <minium.miniprogram.base_driver.element.BaseElement object at 0x10c355c10>][0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"e8d8103a-0464-46be-acba-fe997654207a","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"383ebd69-f629-4c02-9356-aa65e7e5a0df","pageId":26}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"e8d8103a-0464-46be-acba-fe997654207a","result":{"properties":["总价：¥148.00"]}}[0m
+[32mINFO    [0m root:log.py:35 [32mrun find
+ args: 
+(<pages.orderdetail.OrderDetail testMethod=runTest>, '.fc-111A34.fs-30.margin-top22.room-info-bottom-line', {'max_timeout': 30})
+{}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"bad21a75-34be-4e2a-8725-83085d61c60e","method":"App.getCurrentPage","params":{}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"bad21a75-34be-4e2a-8725-83085d61c60e","result":{"pageId":26,"path":"pages/order/detail/detail","query":{"hotelid":"440135","folioid":"4700"}}}[0m
+[32mINFO    [0m root:page.py:237 [32mtry to get elements: .fc-111A34.fs-30.margin-top22.room-info-bottom-line[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"e713dd2b-1903-42f5-b4b7-848ee491787c","method":"Page.getElements","params":{"selector":".fc-111A34.fs-30.margin-top22.room-info-bottom-line","pageId":26}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"e713dd2b-1903-42f5-b4b7-848ee491787c","result":{"elements":[{"elementId":"836d65ca-08b3-4f42-9dc3-932a95b90ff5","tagName":"view"}]}}[0m
+[32mINFO    [0m root:page.py:244 [32mfind elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x10c2f4490>][0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"97d3f22b-32ae-4480-ac7b-8793c5199f4a","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"836d65ca-08b3-4f42-9dc3-932a95b90ff5","pageId":26}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"97d3f22b-32ae-4480-ac7b-8793c5199f4a","result":{"properties":["入住人：李福庆"]}}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"a82e4d6b-217f-4077-8eeb-c15d11481072","method":"App.getCurrentPage","params":{}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"a82e4d6b-217f-4077-8eeb-c15d11481072","result":{"pageId":26,"path":"pages/order/detail/detail","query":{"hotelid":"440135","folioid":"4700"}}}[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"be29a212-c2f5-4d6b-aced-1e7e878da4a8","method":"Page.callMethod","params":{"method":"confirmCancel","args":[],"pageId":26}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"be29a212-c2f5-4d6b-aced-1e7e878da4a8","result":{}}[0m
+[32mINFO    [0m root:app.py:554 [32mReLaunch: /pages/home/home[0m
+[35mDEBUG   [0m root:connection.py:132 [35mSEND > {"id":"35a49f9d-a718-4446-b828-48725dba899e","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/home/home"}]}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"id":"35a49f9d-a718-4446-b828-48725dba899e","result":{"result":{"errMsg":"reLaunch:ok"}}}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":27,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 27, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":27,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 27, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m
+[35mDEBUG   [0m root:connection.py:177 [35mRECV < {"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"webviewId":27,"path":"pages/home/home","query":{},"openType":"reLaunch"}]}}[0m
+[32mINFO    [0m root:app.py:264 [32mRoute changed, {'name': 'onAppRouteDone', 'args': [{'webviewId': 27, 'path': 'pages/home/home', 'query': {}, 'openType': 'reLaunch'}]}[0m

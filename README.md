@@ -1,4 +1,5 @@
 # pytest 执行方式
+## 执行方式一
 1. 打开Terminal，进入pytest.ini文件目录
 ```shell script
     cd /conf/
@@ -14,6 +15,12 @@
 4. 打开报告
 ```shell script
     allure serve report/
+```
+## 执行方式二
+1. 生成jenkins可查看报告命令
+```shell script
+    cd /conf/
+    pytest --alluredir ./allure-results
 ```
 
 # 基于minitest+pytest+unittest+allure框架

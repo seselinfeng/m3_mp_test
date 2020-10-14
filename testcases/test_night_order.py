@@ -18,9 +18,16 @@ class TestNightOrder:
 
     @allure.title("整夜房当日预定流程测试")
     @pytest.mark.parametrize(("name", "phone", "room_type", "except_result"),
-                             get_data('test_night_order', '../data/test_overnight_order.yaml'))
+                             get_data('test_night_order', '../data/pro_data/test_overnight_order.yaml'))
     def test_night_order(self, name, phone, room_type, except_result):
-        """整夜房预定当日酒店流程测试"""
+        """
+        整夜房预定当日酒店流程测试
+        :param name: 入住人
+        :param phone: 电话号码
+        :param room_type: 房型名称
+        :param except_result: 期望结果集
+        :return: None
+        """
         with allure.step(f"{room_type}-整夜房下单流程"):
             hotel_scheduled = self.main.goto_night_hotel_list().goto_hotel_detail().goto_hotel_scheduled(
                 room_type).save_order(name, phone)
@@ -46,10 +53,15 @@ class TestNightOrder:
 
     @allure.title("整夜房预定流程（带游戏机）测试")
     @pytest.mark.parametrize(("name", "phone", "room_type", "except_result"),
-                             get_data('test_switch_night_order', '../data/test_overnight_order.yaml'))
+                             get_data('test_switch_night_order', '../data/pro_data/test_overnight_order.yaml'))
     def test_switch_night_order(self, name, phone, room_type, except_result):
         """
         租赁游戏机订单
+        :param name: 入住人
+        :param phone: 电话号码
+        :param room_type: 房型名称
+        :param except_result: 期望结果集
+        :return: None
         """
         with allure.step("整夜房下单流程"):
             hotel_scheduled = self.main.goto_night_hotel_list().goto_hotel_detail().goto_hotel_scheduled(
@@ -73,15 +85,24 @@ class TestNightOrder:
             room_user = except_result.get("expect_result")[4].get("入住人")
             assert paid_result == f"总价：{totel_paid}", f'当前返回的实际值为: {paid_result}'
             assert username_result == f"入住人：{room_user}", f'当前返回的实际值为:{username_result}'
-            assert switch_result == f"(含游戏机租金60元)", f'当前返回的实际值为:{switch_result}'
+            assert switch_result == f"(含游戏机租金30元)", f'当前返回的实际值为:{switch_result}'
         with allure.step("取消订单，释放房态"):
             self.order_detail.cancel_order()
 
     @allure.title("整夜房房态已满测试")
+    @pytest.mark.skip
     @pytest.mark.parametrize(("name", "phone", "room_type", "room_code", "except_result"),
-                             get_data('test_night_nh_order', '../data/test_overnight_order.yaml'))
+                             get_data('test_night_nh_order', '../data/pro_data/test_overnight_order.yaml'))
     def test_night_nh_order(self, name, phone, room_type, room_code, except_result):
-        """整夜房房态已满测试"""
+        """
+        整夜房房态已满测试
+        :param name: 入住人
+        :param phone: 电话号码
+        :param room_type: 房型名称
+        :param room_code: 房型编码
+        :param except_result: 期望结果集
+        :return: None
+        """
         with allure.step(f"{room_type}-整夜下单流程"):
             hotel_scheduled = self.main.goto_night_hotel_list().goto_hotel_detail().goto_hotel_scheduled(
                 room_type).save_order(name, phone)
@@ -109,8 +130,14 @@ class TestNightOrder:
 
     @allure.title("整夜房选择前一天预定测试")
     @pytest.mark.parametrize(("yesterday_date", "except_result"),
-                             get_data('test_yesterday_order', '../data/test_overnight_order.yaml'))
+                             get_data('test_yesterday_order', '../data/pro_data/test_overnight_order.yaml'))
     def test_yesterday_order(self, yesterday_date, except_result):
+        """
+        测试前一天是否可选
+        :param yesterday_date: 昨天日期
+        :param except_result: 期望结果集
+        :return: None
+        """
         with allure.step(f"{yesterday_date[0]} 日：整夜房下单流程"):
             self.main.tap_night()
             self.main.tap_night_time_select()
@@ -119,11 +146,21 @@ class TestNightOrder:
 
     @allure.title("整夜房远期预定流程测试")
     @pytest.mark.parametrize(("name", "phone", "room_type", "start_date", "end_date", "except_result"),
-                             get_data('test_forward_night_order', '../data/test_overnight_order.yaml'))
+                             get_data('test_forward_night_order', '../data/pro_data/test_overnight_order.yaml'))
     def test_forward_night_order(self, name, phone, room_type, start_date, end_date, except_result):
+        """
+        远期预定流程
+        :param name: 入住人
+        :param phone: 电话号码
+        :param room_type: 房型名称
+        :param start_date: 开始日期
+        :param end_date: 结束日期
+        :param except_result: 期望结果集
+        :return: None
+        """
         with allure.step(f"{start_date}日：{room_type}-整夜房下单流程"):
             hotel_scheduled = self.main.set_night_date(
-                start_date, end_date).goto_night_hotel_list().goto_hotel_detail().goto_hotel_scheduled(
+                start_date, end_date).tap_search_hotels().goto_hotel_detail().goto_hotel_scheduled(
                 room_type).save_order(name,
                                       phone)
         with allure.step("校验整夜房费是否正确"):
@@ -148,11 +185,21 @@ class TestNightOrder:
 
     @allure.title("整夜房远期预定游戏机选择测试")
     @pytest.mark.parametrize(("name", "phone", "room_type", "start_date", "end_date", "except_result"),
-                             get_data('test_switch_forward_night_order', '../data/test_overnight_order.yaml'))
+                             get_data('test_switch_forward_night_order', '../data/pro_data/test_overnight_order.yaml'))
     def test_switch_forward_night_order(self, name, phone, room_type, start_date, end_date, except_result):
+        """
+        选择远期、选择游戏机测试
+        :param name: 入住人
+        :param phone: 电话号码
+        :param room_type: 房型名称
+        :param start_date: 开始日期
+        :param end_date: 结束日期
+        :param except_result: 期望结果集
+        :return: None
+        """
         with allure.step(f"{start_date}日：{room_type}-整夜房下单流程"):
             hotel_scheduled = self.main.set_night_date(
-                start_date, end_date).goto_day_hotel_list().goto_hotel_detail().goto_hotel_scheduled(
+                start_date, end_date).tap_search_hotels().goto_hotel_detail().goto_hotel_scheduled(
                 room_type).save_order(name,
                                       phone).equipment_rental().select_switch()
         with allure.step("断言整夜房费"):
@@ -174,9 +221,10 @@ class TestNightOrder:
             room_user = except_result.get("expect_result")[4].get("入住人")
             assert paid_result == f"总价：{totel_paid}", f'当前返回的实际值为: {paid_result}'
             assert username_result == f"入住人：{room_user}", f'当前返回的实际值为:{username_result}'
-            assert switch_result == f"(含游戏机租金60元)", f'当前返回的实际值为:{switch_result}'
+            assert switch_result == f"(含游戏机租金30元)", f'当前返回的实际值为:{switch_result}'
         with allure.step("取消订单，释放房态"):
             self.order_detail.cancel_order()
 
     def teardown(self):
         self.routing.goto_main()
+        time.sleep(1)
